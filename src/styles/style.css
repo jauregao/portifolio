@@ -22,9 +22,9 @@ body {
   display: none;
 }
 
-header {
+.container-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 80px;
   margin: 10px 1% 0 1%;
   background-color: var(--color-purple);
@@ -42,6 +42,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-left: 1%;
 }
 
 .logo img {
@@ -74,6 +75,7 @@ header a {
   border: none;
   font-family: inherit;
   z-index: 1;
+  margin-right: 10px;
 }
 
 .button::before,
@@ -116,10 +118,6 @@ header a {
 
 a.button:hover li {
   color: var(--color-purple-dark);
-}
-
-.button {
-  margin-right: 10px;
 }
 
 /** MAIN CONTENT IMG DRAW*/
@@ -363,6 +361,10 @@ p {
   width: 150px;
 }
 
+.project-without-deploy {
+  background-color: #36363d;
+}
+
 /* footer */
 
 footer {
@@ -427,4 +429,35 @@ footer h2 {
   font-size: 12px;
   font-family: 'Montserrat';
   color: #be8bf1;
+}
+
+/* responsividade */
+
+@media (min-width: 600px) and (max-width: 1060px) {
+  .container-menu {
+    display: none;
+    background-color: transparent;
+  }
+
+  .menu-mobile {
+    display: flex;
+    margin-top: 20px;
+    background-color: var(--color-purple);
+    border-radius: 50px;
+    backdrop-filter: blur(15px);
+    position: fixed;
+  }
+
+  .mobile ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0 40px;
+  }
+
+  .mobile ul li a img {
+    height: 30px;
+    width: auto;
+  }
 }
