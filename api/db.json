@@ -1,6 +1,6 @@
 {
   "pt": {
-    "name": "Amanda ",
+    "name": "Amanda Oliveira",
     "role": [
       "Desenvolvedora BackEnd",
       "Desenvolvedora FullStack",
@@ -17,12 +17,10 @@
     "infos": {
       "about": "",
       "techIcon": {
-        "css": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/CSS.svg",
         "docker": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Docker.svg",
         "express": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/ExpressJS-Dark.svg",
         "figma": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Figma-Dark.svg",
         "git": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Git.svg",
-        "html": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/HTML.svg",
         "javascript": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/JavaScript.svg",
         "jest": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Jest.svg",
         "mongodb": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/MongoDB.svg",

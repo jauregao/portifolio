@@ -1,6 +1,5 @@
-import Techs from "./Techs";
-
 export default function MainInfos() {
+
     return (
         <section className="bg-not-black w-full h-full rounded-xl p-12 self-end col-start-5 col-end-12 row-start-3 row-end-13">
             <div className="mb-10">
@@ -19,7 +18,6 @@ export default function MainInfos() {
                     <h2 className="font-[realce] text-5xl">Hard Skills</h2>
                     <div className="w-60 h-1 rounded-sm bg-shiny-purple"></div>
                 </div>
-                <Techs/>
             </div>
         </section>
     )

@@ -33,11 +33,11 @@ body {
 }
 
 @layer components {
-	.selected-lenguage-br {
+	.selected-color-mode-dark {
 		@apply p-2 rounded-lg bg-shiny-purple drop-shadow-lg -mr-2;
 	}
 
-	.selected-lenguage-en {
+	.selected-color-mode-light {
 		@apply p-2 rounded-lg bg-shiny-purple drop-shadow-lg -ml-2;
 	}
 }
