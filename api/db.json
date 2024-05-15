@@ -1,0 +1,54 @@
+{
+  "pt": {
+    "name": "Amanda ",
+    "role": [
+      "Desenvolvedora BackEnd",
+      "Desenvolvedora FullStack",
+      "Web Designer"
+    ],
+    "social": {
+      "github": "https://github.com/jauregao/",
+      "linkedin": "https://www.linkedin.com/in/amandaj-/",
+      "behance": "https://www.behance.net/amandaj/",
+      "whatsapp": "https://wa.me/5521978911990?text=Ol%C3%A1%21+Te+encontrei+pelo+seu+portif%C3%B3lio.",
+      "instagram": "https://www.instagram.com/mands.jauregui/",
+      "resume": "https://jauregao.github.io/cv/files/Desenvolvedora-Amanda_Oliveira.pdf"
+    },
+    "infos": {
+      "about": "",
+      "techIcon": {
+        "css": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/CSS.svg",
+        "docker": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Docker.svg",
+        "express": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/ExpressJS-Dark.svg",
+        "figma": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Figma-Dark.svg",
+        "git": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Git.svg",
+        "html": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/HTML.svg",
+        "javascript": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/JavaScript.svg",
+        "jest": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Jest.svg",
+        "mongodb": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/MongoDB.svg",
+        "mysql": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/MySQL-Dark.svg",
+        "nestjs": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/NestJS-Dark.svg",
+        "nextjs": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/NextJS-Dark.svg",
+        "nodejs": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/NodeJS-Dark.svg",
+        "postgresql": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/PostgreSQL-Dark.svg",
+        "postman": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Postman.svg",
+        "react": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/React-Dark.svg",
+        "tailwind": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/TailwindCSS-Dark.svg",
+        "typescript": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/TypeScript.svg",
+        "ubuntu": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Ubuntu-Dark.svg",
+        "wordpress": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Wordpress.svg"
+      }
+    },
+    "projects": [
+      {
+        "name": "nome projeto",
+        "description": "description of project",
+        "techs": [
+          "array de tecnologias"
+        ],
+        "repository": "link github",
+        "deploy": "link deploy"
+      }
+    ]
+  }
+}
