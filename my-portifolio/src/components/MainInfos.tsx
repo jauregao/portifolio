@@ -1,9 +1,15 @@
-export default function MainInfos() {
+import Techs from '@/components/Techs'
+import getData from '../functions/getData'
+
+
+export default async function MainInfos() {
+
+    const data = await getData()
 
     return (
-        <section className="bg-not-black w-full h-full rounded-xl p-12 self-end col-start-5 col-end-12 row-start-3 row-end-13">
+        <section className="bg-not-black w-full h-full rounded-xl p-12 self-end col-start-5 col-end-12 row-start-3 row-end-13 flex flex-col justify-around">
             <div className="mb-10">
-                <div className="flex items-center gap-5 mb-2">
+                <div className="flex items-center gap-5 mb-4">
                     <h2 className="font-[realce] text-5xl">Sobre Mim</h2>
                     <div className="w-60 h-1 rounded-sm bg-shiny-purple"></div>
                 </div>
@@ -14,10 +20,11 @@ export default function MainInfos() {
                 </p>
             </div>
             <div>
-                <div className="flex items-center gap-5 mb-2">
+                <div className="flex items-center gap-5 mb-4">
                     <h2 className="font-[realce] text-5xl">Hard Skills</h2>
                     <div className="w-60 h-1 rounded-sm bg-shiny-purple"></div>
                 </div>
+                    <Techs data={data}/>
             </div>
         </section>
     )

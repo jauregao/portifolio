@@ -2,9 +2,8 @@ import AsideInfoContact from '@/components/AsideInfoContact'
 import ChangeColorScheme from '@/components/ChangeColorScheme'
 import ChangeMainInfos from '@/components/ChangeMainInfos'
 import MainInfos from '@/components/MainInfos'
-import Techs from '@/components/Techs'
 
-export default function Page() {
+export default async function Page() {
 
   return (
     <main className="bg-[url(/assets/background.svg)] w-[100vw] h-[100vh] p-10 flex justify-center">
@@ -13,12 +12,6 @@ export default function Page() {
         <MainInfos/>
         <ChangeMainInfos/>
         <ChangeColorScheme/>
-
-          <Techs>
-            <>
-            data.
-            </>
-          </Techs>
 
       </div>
     </main>

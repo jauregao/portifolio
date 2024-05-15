@@ -1,19 +1,18 @@
 import { DevData } from '@/types/devTypes'
 import Image from 'next/image'
 
-export default function Techs(props: DevData){
-    
-    const techs: { [key: string]: string } = props.infos.techIcon
+export default function Techs({ data }: { data: DevData }) {
+    const techs: Record<string, string> = data.infos.techIcon
 
     return (
-        <div className='grid grid-cols-7'>
+        <div className='grid grid-cols-9 gap-y-5'>
             {
-                Object.keys(techs).map((techName, index) => (
+                Object.entries(techs).map(([techName, imageUrl], index) => (
                     <Image
                         key={index}
-                        src={techs[techName]}
-                        width={40}
-                        height={40}
+                        src={imageUrl}
+                        width={70}
+                        height={70}
                         alt={`${techName} icon`}
                     />
                 ))

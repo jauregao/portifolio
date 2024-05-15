@@ -42,3 +42,10 @@ export type DevData = {
             deploy: string
         }[]
     }
+
+
+export interface IDevData {
+        infos: {
+            techIcon: Record<string, string>
+        }
+}
