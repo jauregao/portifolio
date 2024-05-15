@@ -3,26 +3,26 @@ import Link from 'next/link'
 
 export default function Infos() {
     return (
-        <section className="px-6 pt-16 pb-10 flex flex-col items-center w-[400px] bg-not-black rounded-xl gap-6">
+        <section className="px-6 pt-16 pb-10 flex flex-col items-center justify-between w-[400px] h-full bg-not-black rounded-xl gap-6">
             <div>
-            <h1 className="text-center font-[realce] text-5xl">Amanda Oliveira</h1>
+            <h1 className="text-center font-[realce] text-5xl mt-24">Amanda Oliveira</h1>
             <h2 className="text-center font-semibold text-xl">Desenvolvedora FullStack</h2>
             </div>
             <div className="flex gap-5">
                 <Link href="https://www.behance.net/amandaj" target="blank" rel="noopener noreferrer">
-                    <img src="/assets/behance.svg" alt="behnce logo" />
+                    <img className="hover:opacity-80 transition-all duration-200" src="/assets/behance.svg" alt="behnce logo" />
                 </Link>
                 
                 <Link href="https://github.com/jauregao" target="blank" rel="noopener noreferrer">
-                    <img src="/assets/github.svg" alt="github logo" />
+                    <img className="hover:opacity-80 transition-all duration-200" src="/assets/github.svg" alt="github logo" />
                 </Link>
                 
                 <Link href="https://www.linkedin.com/in/amandaj-/" target="blank" rel="noopener noreferrer">
-                    <img src="/assets/in.svg" alt="linkedin logo" />
+                    <img className="hover:opacity-80 transition-all duration-200" src="/assets/in.svg" alt="linkedin logo" />
                 </Link>
                 
                 <Link href="https://wa.me/5521979911990" target="blank" rel="noopener noreferrer">
-                    <img src="/assets/whatsapp.svg" alt="whatsapp logo" />
+                    <img className="hover:opacity-80 transition-all duration-200" src="/assets/whatsapp.svg" alt="whatsapp logo" />
                 </Link>
             </div>
             <Contact/>
