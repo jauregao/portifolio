@@ -2,7 +2,7 @@ import Techs from "./Techs";
 
 export default function MainInfos() {
     return (
-        <section className="bg-not-black w-full h-5/6 rounded-xl p-12 self-end">
+        <section className="bg-not-black w-full h-full rounded-xl p-12 self-end col-start-5 col-end-12 row-start-3 row-end-13">
             <div className="mb-10">
                 <div className="flex items-center gap-5 mb-2">
                     <h2 className="font-[realce] text-5xl">Sobre Mim</h2>

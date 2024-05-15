@@ -6,13 +6,11 @@ import MainInfos from "@/components/MainInfos"
 export default function Page() {
   return (
     <main className="bg-[url(/assets/background.svg)] w-[100vw] h-[100vh] p-10 flex justify-center">
-      <div className="container flex items-center gap-5">
-      <AsideInfoContact/>
-      <MainInfos/>
-      <ChangeMainInfos/>
-      <div className="self-start -ml-28">
+      <div className="container grid grid-cols-14 grid-rows-12 items-center gap-5">
+        <AsideInfoContact/>
+        <MainInfos/>
+        <ChangeMainInfos/>
         <ChangeLenguage/>
-      </div>
       </div>
     </main>
   )

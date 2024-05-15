@@ -1,6 +1,6 @@
 export default function Contact() {
     return(
-        <section className="bg-not-white/10 p-6 max-w-96 h-max rounded-xl">
+        <section className="bg-not-white/10 p-5 max-w-96 h-max rounded-xl">
             <div className="flex gap-3 mb-4 justify-start items-center">
                 <div className="bg-not-black rounded-xl w-14 h-14 flex justify-center items-center"><img className="min-w-9 min-h-9" src="/assets/phone.svg" alt="telefone icone" /></div>
                 <div>
