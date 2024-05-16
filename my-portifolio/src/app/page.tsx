@@ -1,7 +1,7 @@
 import AsideInfoContact from '@/components/AsideInfoContact'
-import ChangeColorScheme from '@/components/ChangeColorScheme'
 import ChangeMainInfos from '@/components/ChangeMainInfos'
 import MainInfos from '@/components/MainInfos'
+import { useEffect } from 'react';
 
 export default async function Page() {
 
@@ -11,8 +11,6 @@ export default async function Page() {
         <AsideInfoContact/>
         <MainInfos/>
         <ChangeMainInfos/>
-        <ChangeColorScheme/>
-
       </div>
     </main>
   )

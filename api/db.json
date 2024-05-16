@@ -16,7 +16,7 @@
     },
     "infos": {
       "about": "",
-      "techIcon": {
+      "techIcons": {
         "docker": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Docker.svg",
         "express": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/ExpressJS-Dark.svg",
         "figma": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Figma-Dark.svg",

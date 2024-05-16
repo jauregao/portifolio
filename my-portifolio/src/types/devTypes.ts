@@ -11,7 +11,7 @@ export type DevData = {
     }
     infos: {
         about: string
-        techIcon: {
+        techIcons: {
             css: string
             docker: string
             express: string
