@@ -5,8 +5,14 @@ const router = _router('db.json')
 const middlewares = defaults()
 
 import cors from 'cors'
+const corsOptions = {
+    origin: '*',
+    methods: ['GET'], // Métodos permitidos
+    allowedHeaders: ['Content-Type', 'Authorization'], 
+    credentials: true 
+};
 
-server.use(cors())
+server.use(cors(corsOptions))
 server.use(middlewares)
 server.use(router)
 server.listen(process.env.SERVER_PORT || 3000)

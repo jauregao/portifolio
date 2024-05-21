@@ -1,19 +1,34 @@
 {
   "pt": {
     "name": "Amanda Oliveira",
-    "role": [
-      "Desenvolvedora BackEnd",
-      "Desenvolvedora FullStack",
-      "Web Designer"
+    "resume": "https://jauregao.github.io/cv/files/Desenvolvedora-Amanda_Oliveira.pdf",
+    "social": [
+      {
+        "name": "github",
+        "link": "https://github.com/jauregao/",
+        "icon": "https://f005.backblazeb2.com/file/assets-my-portifolio/assets/github.svg"
+      },
+      {
+        "name": "linkedin",
+        "link": "https://www.linkedin.com/in/amandaj-/",
+        "icon": "https://f005.backblazeb2.com/file/assets-my-portifolio/assets/linkedin.svg"
+      },
+      {
+        "name": "behance",
+        "link": "https://www.behance.net/amandaj/",
+        "icon": "https://f005.backblazeb2.com/file/assets-my-portifolio/assets/behance.svg"
+      },
+      {
+        "name": "whatsapp",
+        "link": "https://wa.me/5521978911990/",
+        "icon": "https://f005.backblazeb2.com/file/assets-my-portifolio/assets/whatsapp.svg"
+      },
+      {
+        "name": "instagram",
+        "link": "https://www.instagram.com/amandajauregui.dev/",
+        "icon": "https://f005.backblazeb2.com/file/assets-my-portifolio/assets/instagram.svg"
+      }
     ],
-    "social": {
-      "github": "https://github.com/jauregao/",
-      "linkedin": "https://www.linkedin.com/in/amandaj-/",
-      "behance": "https://www.behance.net/amandaj/",
-      "whatsapp": "https://wa.me/5521978911990?text=Ol%C3%A1%21+Te+encontrei+pelo+seu+portif%C3%B3lio.",
-      "instagram": "https://www.instagram.com/mands.jauregui/",
-      "resume": "https://jauregao.github.io/cv/files/Desenvolvedora-Amanda_Oliveira.pdf"
-    },
     "infos": {
       "about": "",
       "techIcons": {
