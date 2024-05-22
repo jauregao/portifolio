@@ -104,52 +104,64 @@
     },
     "projects": [
       {
-        "name": "nome projeto",
-        "image": "link do asset",
+        "name": "nome projeto1",
+        "stack": [
+          "back"
+        ],
+        "image": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Docker.svg",
         "description": "description of project",
         "techs": [
           {
             "name": "nome",
-            "link": "link do icon"
+            "link": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Wordpress.svg"
           }
         ],
         "repository": "link github",
         "deploy": "link deploy"
       },
       {
-        "name": "nome projeto",
-        "image": "link do asset",
+        "name": "nome projeto2",
+        "stack": [
+          "back"
+        ],
+        "image": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Docker.svg",
         "description": "description of project",
         "techs": [
           {
             "name": "nome",
-            "link": "link do icon"
+            "link": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Wordpress.svg"
           }
         ],
         "repository": "link github",
         "deploy": "link deploy"
       },
       {
-        "name": "nome projeto",
-        "image": "link do asset",
+        "name": "nome projeto3",
+        "stack": [
+          "back"
+        ],
+        "image": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Docker.svg",
         "description": "description of project",
         "techs": [
           {
             "name": "nome",
-            "link": "link do icon"
+            "link": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Wordpress.svg"
           }
         ],
         "repository": "link github",
         "deploy": "link deploy"
       },
       {
-        "name": "nome projeto",
-        "image": "link do asset",
+        "name": "nome projeto4",
+        "stack": [
+          "back"
+        ],
+        "image": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Docker.svg",
         "description": "description of project",
         "techs": [
           {
             "name": "nome",
-            "link": "link do icon"
+            "link": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Wordpress.svg"
           }
         ],
         "repository": "link github",

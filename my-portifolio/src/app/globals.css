@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c499ff28;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #802ff1c1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #812FF1;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -43,7 +60,7 @@ body {
   }
 
   .rotate-y-180 {
-    animation: rotate-y 1s both;
+    animation: rotate-y 0.5s both;
   }
 
   @keyframes rotate-y-back {
@@ -56,6 +73,6 @@ body {
 }
 
 .rotate-y-180-back {
-    animation: rotate-y-back 1s both;
+    animation: rotate-y-back 0.5s  both;
 }
 }

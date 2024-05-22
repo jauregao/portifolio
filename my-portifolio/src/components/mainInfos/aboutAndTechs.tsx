@@ -2,7 +2,7 @@ import Techs from '../mainContent/Techs'
 
 export default function AboutAndTechs() {
     return (
-            <>
+            <div className='p-12'>
                 <div className="mb-10">
                     <div className="flex items-center gap-5 mb-5">
                         <h2 className="font-[realce] lg:text-5xl text-4xl">Sobre Mim</h2>
@@ -21,6 +21,6 @@ export default function AboutAndTechs() {
                     </div>
                         <Techs/>
                 </div>
-            </>
+            </div>
     )
 }
