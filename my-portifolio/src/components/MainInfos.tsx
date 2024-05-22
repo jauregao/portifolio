@@ -1,10 +1,9 @@
 import Techs from '@/components/Techs'
-import getData from '../functions/getData'
+
 
 
 export default async function MainInfos() {
 
-    const data = await getData()
 
     return (
         <section className="bg-not-black w-full h-full rounded-xl p-12 self-end col-start-5 col-end-12 row-start-3 row-end-13 flex flex-col justify-around">
@@ -24,7 +23,7 @@ export default async function MainInfos() {
                     <h2 className="font-[realce] text-5xl">Hard Skills</h2>
                     <div className="w-60 h-1 rounded-sm bg-shiny-purple"></div>
                 </div>
-                    <Techs data={data}/>
+                    <Techs/>
             </div>
         </section>
     )
