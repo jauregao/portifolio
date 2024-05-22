@@ -22,7 +22,7 @@ const [techIcons, setTechIcons] = useState<TechIcons[]>([])
     }, [])
 
     return (
-        <div className='grid xl:grid-cols-8 lg:grid-cols-6 grid-cols-4 gap-y-5'>
+        <div className='grid xl:grid-cols-10 lg:grid-cols-6 grid-cols-4 gap-y-5'>
             {
                 techIcons.map(tech => (
                     <div className='flex flex-col items-center'>

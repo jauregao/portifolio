@@ -31,14 +31,3 @@ body {
     text-wrap: balance;
   }
 }
-
-@layer components {
-	.selected-color-mode-dark {
-		@apply p-2 rounded-lg bg-shiny-purple drop-shadow-lg -mr-2;
-	}
-
-	.selected-color-mode-light {
-		@apply p-2 rounded-lg bg-shiny-purple drop-shadow-lg -ml-2;
-	}
-}
-
