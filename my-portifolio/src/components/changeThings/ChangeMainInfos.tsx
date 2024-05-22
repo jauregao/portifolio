@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import caseIcon from '../../../public/assets/case.svg';
 import userIcon from '../../../public/assets/user.svg';
-import { useState } from 'react';
 
 interface ChangeMainInfosProps {
     onSelectInfo: (info: string) => void;
@@ -25,16 +24,14 @@ export default function ChangeMainInfos({ onSelectInfo }: ChangeMainInfosProps) 
     }
 
     return (
-        <section className='flex flex-col gap-6 h-max w-max p-3 rounded-xl bg-not-black col-start-12 col-end-13 row-start-3 mt-[9rem] justify-end'>
+        <section className='flex flex-col gap-6 h-max w-max p-3 rounded-xl bg-not-black col-start-12 col-end-13 row-start-3 mt-[5.3rem] justify-end'>
             {icons.map(({ name, icon }) => (
-                <div className='bg-not-white/10 p-2 rounded-lg hover:bg-not-white/20 transition-all duration-300 cursor-pointer' key={name}>
+                <div id={name} onClick={handleChangeMainInfo} className='bg-not-white/10 p-2 rounded-lg hover:bg-not-white/20 transition-all duration-300 cursor-pointer' key={name}>
                 <Image
-                    id={name}
                     src={icon}
                     width={30}
                     height={30}
                     alt={`${name} icon`}
-                    onClick={handleChangeMainInfo}
                 />
                 </div>
             ))}

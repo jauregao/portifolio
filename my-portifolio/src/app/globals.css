@@ -31,3 +31,31 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  @keyframes rotate-y {
+    0% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+  }
+
+  .rotate-y-180 {
+    animation: rotate-y 1s both;
+  }
+
+  @keyframes rotate-y-back {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-180deg); 
+    }
+}
+
+.rotate-y-180-back {
+    animation: rotate-y-back 1s both;
+}
+}

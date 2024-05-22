@@ -17,7 +17,7 @@ export type Infos = {
 export type Project = {
     name: string
     description: string
-    techs: string[]
+    techs: TechIcons[]
     repository: string
     deploy: string
 }

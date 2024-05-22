@@ -20,7 +20,16 @@ const config: Config = {
       },
       fontFamily: {
         'realce': ['var(--realce)']
-      }
+      },
+      keyframes: {
+        'rotate-y-180': {
+          '0%': { transform: 'rotateY(180deg)' },
+          '100%': { transform: 'rotateY(0)' },
+        },
+      },
+      animation: {
+        'rotate-y-180': 'rotate-y-180 0.5s both',
+      },
     },
   },
   plugins: [

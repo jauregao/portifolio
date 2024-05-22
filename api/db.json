@@ -105,9 +105,52 @@
     "projects": [
       {
         "name": "nome projeto",
+        "image": "link do asset",
         "description": "description of project",
         "techs": [
-          "array de tecnologias"
+          {
+            "name": "nome",
+            "link": "link do icon"
+          }
+        ],
+        "repository": "link github",
+        "deploy": "link deploy"
+      },
+      {
+        "name": "nome projeto",
+        "image": "link do asset",
+        "description": "description of project",
+        "techs": [
+          {
+            "name": "nome",
+            "link": "link do icon"
+          }
+        ],
+        "repository": "link github",
+        "deploy": "link deploy"
+      },
+      {
+        "name": "nome projeto",
+        "image": "link do asset",
+        "description": "description of project",
+        "techs": [
+          {
+            "name": "nome",
+            "link": "link do icon"
+          }
+        ],
+        "repository": "link github",
+        "deploy": "link deploy"
+      },
+      {
+        "name": "nome projeto",
+        "image": "link do asset",
+        "description": "description of project",
+        "techs": [
+          {
+            "name": "nome",
+            "link": "link do icon"
+          }
         ],
         "repository": "link github",
         "deploy": "link deploy"

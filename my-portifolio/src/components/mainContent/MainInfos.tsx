@@ -8,17 +8,13 @@ interface MainInfosProps {
 
 export default function MainInfos({ selectedInfo }: MainInfosProps) {
     return (
-        <section className="bg-not-black w-full h-full lg:rounded-xl rounded-r-lg p-12 self-end col-start-5 col-end-12 lg:row-start-3 row-start-2  row-end-13 flex flex-col justify-around">
-            {selectedInfo === 'user' && (
+        <section className="bg-not-black w-full h-full lg:rounded-xl rounded-r-lg p-12 self-end col-start-5 col-end-12 lg:row-start-3 row-start-2 row-end-13 flex flex-col justify-start">
+            {selectedInfo === 'user' &&
                 <AboutAndTechs/>
-            )}
+            }
 
             {selectedInfo === 'case' && 
-            
-            <>
                 <Projects/>
-            </>
-
             }
         </section>
     );
