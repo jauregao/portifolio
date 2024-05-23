@@ -12,14 +12,7 @@ export default function ProjectCardBack({ project }: IProps) {
     return (
         <>
             <div key={project.name} className="w-full h-full rounded-xl flex flex-col items-center justify-between">
-                <h3 className="font-[realce] tracking-wider text-2xl mt-4">{project.name.toUpperCase()}</h3>
-                    <ul className="flex flex-wrap gap-x-5 gap-y-1 justify-center font-[realce] tracking-wider text-md">
-                                {
-                                    project.techs.map(tech => (
-                                        <li className="list-disc">{tech}</li>       
-                                    ))
-                                }
-                    </ul>
+                <h3 className="font-[realce] tracking-wider text-2xl mt-4 text-center mb-3">{project.name.toUpperCase()}</h3>
                     <p className="text-sm text-center">
                         {project.description.split('.').map((sentence, index) => (
                             <span key={index}>

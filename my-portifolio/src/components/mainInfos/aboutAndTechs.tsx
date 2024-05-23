@@ -21,11 +21,11 @@ export default function AboutAndTechs() {
     }, [])
 
     return (
-            <div className='p-10 animate-fade-left animate-duration-500 animate-ease-in'>
+            <div className='p-10 animate-fade-left animate-duration-500 animate-ease-in overflow-scroll'>
                 <div className="mb-8">
-                    <div className="flex items-center gap-5 mb-5">
-                        <h2 className="font-[realce] lg:text-5xl text-4xl">Sobre Mim</h2>
-                        <div className="lg:w-60 w-28 h-1 rounded-sm bg-shiny-purple"></div>
+                    <div className="flex items-center justify-between mb-5">
+                        <h2 className="font-[realce] xl:text-5xl text-4xl">Sobre Mim</h2>
+                        <div className="xl:w-60 w-40 h-1 rounded-sm bg-shiny-purple"></div>
                     </div>
                     <p className="text-sm flex-wrap">
                     {(info?.about ?? '').split('/').map((sentence, index, array) => (
@@ -37,9 +37,9 @@ export default function AboutAndTechs() {
                     </p> 
                 </div>
                 <div>
-                    <div className="flex items-center gap-5 mb-8">
-                        <h2 className="font-[realce] lg:text-5xl text-4xl">Hard Skills</h2>
-                        <div className="lg:w-60 w-28 h-1 rounded-sm bg-shiny-purple"></div>
+                    <div className="flex items-center justify-between mb-8">
+                        <h2 className="font-[realce] xl:text-5xl text-4xl">Hard Skills</h2>
+                        <div className="xl:w-60 w-40 h-1 rounded-sm bg-shiny-purple"></div>
                     </div>
                         <Techs/>
                 </div>

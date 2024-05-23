@@ -20,7 +20,7 @@ export default function ProjectCard() {
     }, [])
 
     return (
-        <div className='w-full grid grid-cols-2 gap-8 animate-fade-up animate-duration-[800ms] animate-ease-in'>
+        <div className='w-full grid xl:grid-cols-2 grid-cols-1 gap-5 gap-y-5 justify-items-center animate-fade-up animate-duration-[800ms] animate-ease-in object-center'>
             {projects.map(project => (
                 <ProjectCardItem key={project.name} project={project} />
             ))}
@@ -47,9 +47,9 @@ function ProjectCardItem({ project }: ProjectCardItemProps) {
         <section
             onMouseOver={handleMouseOver}
             onMouseLeave={handleMouseLeave}
-            className='w-[28rem] h-[35rem]'
+            className='xl:w-[18rem] w-[24rem] h-full'
         >
-            <div className={`bg-not-white/10 w-[28rem] h-[35rem] rounded-xl flex flex-col items-center p-7transform-style: preserve-3d p-7 rotate-y-180 ${isHovered ? 'animate-rotate-y-180' : ''}`}>
+            <div className={`bg-not-white/10 xl:w-[18rem] w-[24rem] h-full rounded-xl flex flex-col items-center p-7transform-style: preserve-3d p-7 rotate-y-180 ${isHovered ? 'animate-rotate-y-180' : ''}`}>
                 {isHovered ? <ProjectCardBack project={project} /> : <ProjectCardFront project={project} />}
             </div>
         </section>
