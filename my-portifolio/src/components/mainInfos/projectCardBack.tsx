@@ -23,9 +23,9 @@ export default function ProjectCardBack({ project }: IProps) {
                         ))}
                     </p>
 
-                <div className='flex gap-5 justify-center items-center mt-4 font-bold w-full'>
+                <div className='flex gap-2 justify-center items-center mt-4 font-bold w-full'>
                     <Link
-                        className='py-2 w-full bg-not-white/80 hover:bg-not-white text-dark-purple rounded-lg text-sm text-center transition-all duration-300 cursor-pointer'
+                        className='py-2 w-full bg-not-white/80 hover:bg-not-white text-dark-purple rounded-lg text-[12px] text-center transition-all duration-300 cursor-pointer'
                         href={project.repository}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -33,14 +33,14 @@ export default function ProjectCardBack({ project }: IProps) {
                     >REPOSITÓRIO</Link>
                     {project.deploy.length === 0 ? (
                         <div
-                            className="py-2 w-full bg-shiny-purple/80 rounded-lg text-sm text-center transition-all duration-300 cursor-not-allowed hover:opacity-50"
+                            className="py-2 w-full bg-shiny-purple/80 rounded-lg text-[12px] text-center transition-all duration-300 cursor-not-allowed hover:opacity-50"
                             key={project.name}
                         >
                             DEPLOY
                         </div>
                     ) : (
                         <Link
-                            className="py-2 w-full bg-shiny-purple/80 hover:bg-shiny-purple rounded-lg text-sm text-center transition-all duration-300 cursor-pointer"
+                            className="py-2 w-full bg-shiny-purple/80 hover:bg-shiny-purple rounded-lg text-[12px] text-center transition-all duration-300 cursor-pointer"
                             href={project.deploy}
                             target="_blank"
                             rel="noopener noreferrer"

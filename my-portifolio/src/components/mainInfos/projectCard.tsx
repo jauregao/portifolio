@@ -47,9 +47,9 @@ function ProjectCardItem({ project }: ProjectCardItemProps) {
         <section
             onMouseOver={handleMouseOver}
             onMouseLeave={handleMouseLeave}
-            className='xl:w-[18rem] w-[24rem] h-full'
+            className='xl:w-full w-[24rem] h-full'
         >
-            <div className={`bg-not-white/10 xl:w-[18rem] w-[24rem] h-full rounded-xl flex flex-col items-center p-7transform-style: preserve-3d p-7 rotate-y-180 ${isHovered ? 'animate-rotate-y-180' : ''}`}>
+            <div className={`bg-not-white/10 xl:w-full w-[24rem] h-full rounded-xl flex flex-col items-center p-7transform-style: preserve-3d p-7 rotate-y-180 ${isHovered ? 'animate-rotate-y-180' : ''}`}>
                 {isHovered ? <ProjectCardBack project={project} /> : <ProjectCardFront project={project} />}
             </div>
         </section>
