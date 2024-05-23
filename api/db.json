@@ -30,7 +30,7 @@
       }
     ],
     "infos": {
-      "about": "",
+      "about": "Antes de entrar na tecnologia, eu vinha da educação e até cursei parte do curso de Licenciatura em Química na UFF. Essa experiência me trouxe uma bagagem única que influencia minha abordagem no desenvolvimento de software. Aprendi muito sobre comunicação, resolução de problemas e trabalho em equipe, refletindo minha vontade de buscar novos desafios./ Como eterna estudante, estou sempre em busca de desafios que me permitam aplicar minha paixão pela tecnologia. Desenvolvi uma mentalidade proativa e resiliente, o que me ajuda a enfrentar novos conceitos com determinação./ No desenvolvimento BackEnd, me sinto confortável com JavaScript, TypeScript, NodeJS e Express, além de explorar bancos de dados como MySQL, PostgreSQL e MongoDB. Quero ir além do código, deixando minha marca como uma mente criativa e inovadora./ Além do BackEnd, estou dando os primeiros passos no FrontEnd para expandir meu repertório. E meu próximo passo? Mergulhar nos microsserviços e em cloud computing, abrindo portas para desafios ainda maiores em minha carreira.",
       "techIcons": [
         {
           "name": "Docker",
@@ -109,7 +109,7 @@
           "BackEnd"
         ],
         "image": "https://f005.backblazeb2.com/file/assets-my-portifolio/projects-img/pdv.jpg",
-        "description": "Como projeto final do curso de BackEnd da Cubos Academy, criamos um sistema de gerenciamento de caixa para facilitar a administração de vendas. O sistema permite cadastro seguro de usuários, gestão de clientes e produtos, e criação de registros de venda com confirmação por e-mail. Liderando um time de cinco desenvolvedores, organizei tarefas, gerenciei prazos e supervisionei testes e deploy. Em quatro sprints, concluímos o projeto de forma eficiente e pontual, garantindo funcionalidade e segurança. Esse projeto mostrou minha capacidade de liderança e gestão de projetos, destacando minha eficiência na resolução de problemas e entrega de soluções completas.",
+        "description": "Como projeto final do curso de BackEnd da Cubos Academy, criamos um sistema de gerenciamento de caixa para facilitar a administração de vendas. O sistema permite cadastro seguro de usuários, gestão de clientes e produtos, e criação de registros de venda com confirmação por e-mail. Liderando um time de cinco desenvolvedoras, organizei tarefas, gerenciei prazos e supervisionei testes e deploy. Em quatro sprints, concluímos o projeto de forma eficiente e pontual, garantindo funcionalidade e segurança. Esse projeto mostrou minha capacidade de liderança e gestão de projetos, destacando minha eficiência na resolução de problemas e entrega de soluções completas.",
         "techs": [
           "JavaScript",
           "NodeJS",
@@ -132,7 +132,7 @@
           "BackEnd"
         ],
         "image": "https://f005.backblazeb2.com/file/assets-my-portifolio/projects-img/auth.jpg",
-        "description": "O Sistema de Autenticação é uma aplicação de gerenciamento de usuários, desenvolvida para facilitar a criação e autenticação de contas. Permite aos usuários criar contas e armazenar suas informações no banco de dados, além de realizar a autenticação, permitindo que alterem suas informações de cadastro e excluam suas contas. Essas ferramentas garantem a segurança, eficiência e escalabilidade da aplicação.",
+        "description": "O Sistema de Autenticação é uma aplicação de gerenciamento de usuários, desenvolvida para facilitar a criação e autenticação de contas. Permite aos usuários criar contas e armazenar suas informações no banco de dados, além de realizar a autenticação, permitindo que alterem suas informações de cadastro e excluam suas contas.",
         "techs": [
           "TypeScript",
           "NodeJS",
