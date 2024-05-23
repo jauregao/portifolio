@@ -45,7 +45,7 @@ export default function Aside() {
         <section className="px-6 pt-16 pb-10 flex flex-col items-center lg:justify-between justify-start w-fit h-full bg-not-black lg:rounded-xl rounded-l-lg gap-6">
             <div>
             <h1 className="text-center font-[realce] text-5xl mt-24">Amanda Oliveira</h1>
-            <h2 className="text-center font-semibold text-xl">Desenvolvedora FullStack</h2>
+            <h2 className="text-center font-semibold text-xl">Desenvolvedora BackEnd</h2>
             </div>
             <div className="flex gap-5">
 

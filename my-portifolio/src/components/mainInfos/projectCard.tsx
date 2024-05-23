@@ -1,23 +1,23 @@
-import { useEffect, useState } from 'react';
-import ProjectCardFront from './projectCardFront';
-import ProjectCardBack from './projectCardBack';
-import { DevData, Project } from '@/types/devTypes';
-import getData from '@/services/getData';
+import { useEffect, useState } from 'react'
+import ProjectCardFront from './projectCardFront'
+import ProjectCardBack from './projectCardBack'
+import { DevData, Project } from '@/types/devTypes'
+import getData from '@/services/getData'
 
 export default function ProjectCard() {
-    const [projects, setProjects] = useState<Project[]>([]);
+    const [projects, setProjects] = useState<Project[]>([])
 
     useEffect(() => {
         (async () => {        
             try {
-                const response: DevData = await getData();
-                const data = response.projects as Project[];
-                setProjects(data);
+                const response: DevData = await getData()
+                const data = response.projects as Project[]
+                setProjects(data)
             } catch (error) {
-                console.error(error);    
+                console.error(error)    
             }
-        })();
-    }, []);
+        })()
+    }, [])
 
     return (
         <div className='w-full grid grid-cols-2 gap-8 animate-fade-up animate-duration-[800ms] animate-ease-in'>
@@ -25,22 +25,22 @@ export default function ProjectCard() {
                 <ProjectCardItem key={project.name} project={project} />
             ))}
         </div>
-    );
+    )
 }
 
 interface ProjectCardItemProps {
-    project: Project;
+    project: Project
 }
 
 function ProjectCardItem({ project }: ProjectCardItemProps) {
-    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered, setIsHovered] = useState(false)
 
     const handleMouseOver = () => {
-        setIsHovered(true);
+        setIsHovered(true)
     }
 
     const handleMouseLeave = () => {
-        setIsHovered(false);
+        setIsHovered(false)
     }
 
     return (
@@ -53,5 +53,5 @@ function ProjectCardItem({ project }: ProjectCardItemProps) {
                 {isHovered ? <ProjectCardBack project={project} /> : <ProjectCardFront project={project} />}
             </div>
         </section>
-    );
+    )
 }
