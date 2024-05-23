@@ -1,4 +1,4 @@
-import ComponentGroup from '@/components/page/componetGroup'
+import ComponentGroup from '@/components/page/componentGroup'
 
 export default function Page() {
 
