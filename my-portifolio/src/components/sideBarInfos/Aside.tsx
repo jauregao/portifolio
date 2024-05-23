@@ -40,7 +40,7 @@ export default function Aside() {
 
     return (
 
-        <aside className="lg:w-max h-full w-full flex flex-col self-start items-center col-start-1 col-end-5 row-span-12">
+        <aside className="lg:w-max h-full w-full flex flex-col self-start items-center col-start-1 col-end-3 row-span-12">
             <Picture/>
         <section className="px-6 pt-16 pb-10 flex flex-col items-center lg:justify-between justify-start w-fit h-full bg-not-black lg:rounded-xl rounded-l-lg gap-6">
             <div>

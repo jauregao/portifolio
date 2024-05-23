@@ -13,14 +13,25 @@ export default function ProjectCardFront({ project }: IProps) {
                 <Image
                     key={project.name}
                     src={project.image}
-                    width={20}
-                    height={20}
+                    width={1000}
+                    height={1000}
                     alt={`${project.name} photo`}
+                    className="rounded-xl"
                 />
             </div>
 
-            <h3 className="font-[realce] tracking-wider text-2xl mt-4">{project.name.toUpperCase()}</h3>
-            <h4 className="font-[realce] tracking-wider text-lg">{project.stack}</h4>
+            <h3 className="font-[realce] tracking-wider text-2xl mt-7">{project.name.toUpperCase()}</h3>
+            <span className="font-[realce] tracking-wider text-lg">{project.stack}</span>
+                <div>
+                    <p className="mt-5 mb-3 text-center text-xl">Tecnologias utilizadas</p>
+                        <ul className="flex flex-wrap gap-x-8 gap-y-1 justify-center font-[realce] tracking-wider text-md">
+                            {
+                                project.techs.map(tech => (
+                                    <li className="list-disc">{tech}</li>       
+                                ))
+                            }
+                        </ul>
+                </div>
         </>
     )
 }
