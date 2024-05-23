@@ -24,10 +24,9 @@ const [techIcons, setTechIcons] = useState<TechIcons[]>([])
     return (
         <div className='grid xl:grid-cols-8 lg:grid-cols-5 grid-cols-3 gap-y-5'>
             {
-                techIcons.map(tech => (
-                    <div className='flex flex-col items-center'>
+                techIcons.map((tech, index) => (
+                    <div className='flex flex-col items-center' key={index}>
                     <Image
-                        key={tech.name}
                         src={tech.link}
                         width={70}
                         height={70}
