@@ -1,8 +1,9 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "json-server db.json --port 3003 -m ./node_modules/json-server-auth",
     "start": "npm i && node server.js"
