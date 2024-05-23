@@ -1,7 +1,5 @@
 import { Project } from '@/types/devTypes'
 import Link from 'next/link'
-import Image from 'next/image'
-
 
 type IProps = {
     project: Project
@@ -44,7 +42,7 @@ export default function ProjectCardBack({ project }: IProps) {
                             href={project.deploy}
                             target="_blank"
                             rel="noopener noreferrer"
-                            key={project.name}
+                            key={project.image}
                         >
                             DEPLOY
                         </Link>
