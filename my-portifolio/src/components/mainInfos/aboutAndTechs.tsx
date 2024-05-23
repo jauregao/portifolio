@@ -2,9 +2,9 @@ import Techs from '../mainContent/Techs'
 
 export default function AboutAndTechs() {
     return (
-            <div className='p-12'>
+            <div className='p-10'>
                 <div className="mb-10">
-                    <div className="flex items-center gap-5 mb-5">
+                    <div className="flex items-center gap-5 mb-8">
                         <h2 className="font-[realce] lg:text-5xl text-4xl">Sobre Mim</h2>
                         <div className="lg:w-60 w-28 h-1 rounded-sm bg-shiny-purple"></div>
                     </div>
@@ -15,7 +15,7 @@ export default function AboutAndTechs() {
                         </p>
                 </div>
                 <div>
-                    <div className="flex items-center gap-5 mb-5">
+                    <div className="flex items-center gap-5 mb-8">
                         <h2 className="font-[realce] lg:text-5xl text-4xl">Hard Skills</h2>
                         <div className="lg:w-60 w-28 h-1 rounded-sm bg-shiny-purple"></div>
                     </div>

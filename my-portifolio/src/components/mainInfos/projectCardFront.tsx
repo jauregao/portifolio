@@ -9,7 +9,7 @@ export default function ProjectCardFront({ project }: IProps) {
 
     return (
         <>
-            <div className="bg-not-white/5 w-full h-52 rounded-xl">
+            <div className="bg-not-white/5 w-full h-64 rounded-xl">
                 <Image
                     key={project.name}
                     src={project.image}

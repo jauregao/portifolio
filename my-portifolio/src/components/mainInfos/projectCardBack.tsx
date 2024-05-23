@@ -11,7 +11,7 @@ export default function ProjectCardBack({ project }: IProps) {
 
     return (
         <>
-            <div key={project.name}>
+            <div key={project.name} className="w-full h-full rounded-xl flex flex-col items-center justify-between">
                 <h3 className="font-[realce] tracking-wider text-2xl mt-4">{project.name.toUpperCase()}</h3>
                 <div className="font-[realce] tracking-wider text-lg">
                     {
