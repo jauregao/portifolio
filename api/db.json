@@ -104,68 +104,87 @@
     },
     "projects": [
       {
-        "name": "nome projeto1",
+        "name": "Sistema de Gerenciamento de Caixa",
         "stack": [
-          "back"
+          "BackEnd"
         ],
         "image": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Docker.svg",
-        "description": "description of project",
+        "description": "Desenvolvido como projeto final do curso de BackEnd da Cubos Academy, este sistema de gerenciamento de caixa é uma aplicação robusta projetada para facilitar a administração de vendas. O sistema permite cadastro e autenticação segura de usuários, gerenciamento de clientes e produtos, e criação de registros de venda com confirmação por e-mail. Utiliza tecnologias como JavaScript, NodeJS, Express, JsonWebToken, Bcrypt, DotEnv, Cors, NodeMailer, AWS S3, PostgreSQL e Knex. Atuei como líder de um grupo de cinco desenvolvedores, organizando tarefas, gerenciando prazos e supervisionando a testagem e deploy da aplicação. Durante quatro sprints, assegurei a conclusão eficiente e pontual do projeto, além de garantir a funcionalidade e segurança do sistema. Este projeto destaca minhas habilidades técnicas em desenvolvimento BackEnd e minha capacidade de liderança e gestão de projetos, demonstrando eficiência na resolução de problemas e entrega de soluções tecnológicas completas.",
         "techs": [
-          {
-            "name": "nome",
-            "link": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Wordpress.svg"
-          }
+          "JavaScript",
+          "NodeJS",
+          "Express",
+          "JsonWebToken",
+          "Bcrypt",
+          "DotEnv",
+          "Cors",
+          "NodeMailer",
+          "AWS S3",
+          "PostgreSQL",
+          "Knex"
         ],
-        "repository": "link github",
-        "deploy": "link deploy"
+        "repository": "https://github.com/jauregao/desafio-backend-modulo-05-sistema-pdv",
+        "deploy": ""
       },
       {
-        "name": "nome projeto2",
+        "name": "Sistema de Autenticação",
         "stack": [
-          "back"
+          "BackEnd"
         ],
         "image": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Docker.svg",
-        "description": "description of project",
+        "description": "O Sistema de Autenticação é uma aplicação de gerenciamento de usuários, desenvolvida para facilitar a criação e autenticação de contas. Permite aos usuários criar contas e armazenar suas informações no banco de dados, além de realizar a autenticação, permitindo que alterem suas informações de cadastro e excluam suas contas. Para este projeto, utilizei tecnologias como TypeScript, NodeJS, Express, JsonWebToken, Bcrypt, DotEnv, PostgreSQL e Knex. Essas ferramentas garantem a segurança, eficiência e escalabilidade da aplicação. O projeto pode ser acessado no GitHub e demonstra minha habilidade em construir sistemas de autenticação seguros e eficientes, utilizando práticas modernas de desenvolvimento BackEnd.",
         "techs": [
-          {
-            "name": "nome",
-            "link": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Wordpress.svg"
-          }
+          "TypeScript",
+          "NodeJS",
+          "Express",
+          "JsonWebToken",
+          "Bcrypt",
+          "DotEnv",
+          "PostgreSQL",
+          "Knex"
         ],
-        "repository": "link github",
-        "deploy": "link deploy"
+        "repository": "https://github.com/jauregao/auth-system",
+        "deploy": ""
       },
       {
-        "name": "nome projeto3",
+        "name": "Mini Rede Social",
         "stack": [
-          "back"
+          "BackEnd"
         ],
         "image": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Docker.svg",
-        "description": "description of project",
+        "description": "A Mini Rede Social é uma aplicação onde os usuários podem postar imagens e interagir com outros posts. Possui funcionalidades de cadastro de usuário, permitindo a criação, atualização, listagem, detalhamento e desativação de contas. Também permite a criação, atualização, listagem, detalhamento e exclusão de posts, além de oferecer curtidas únicas e comentários em cada post. O projeto utiliza tecnologias como TypeScript, MongoDB, AWS S3, Express, Mongoose, Multer, DotEnv e Docker, garantindo um ambiente de desenvolvimento moderno e eficiente. Disponível no GitHub, este projeto demonstra minha habilidade em desenvolver aplicações interativas e dinâmicas, integrando funcionalidades de mídia social com eficiência e segurança.",
         "techs": [
-          {
-            "name": "nome",
-            "link": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Wordpress.svg"
-          }
+          "TypeScript",
+          "MongoDB",
+          "AWS S3",
+          "Express",
+          "Mongoose",
+          "Multer",
+          "DotEnv",
+          "Docker"
         ],
-        "repository": "link github",
-        "deploy": "link deploy"
+        "repository": "https://github.com/jauregao/social-network-mongodb",
+        "deploy": ""
       },
       {
-        "name": "nome projeto4",
+        "name": "Sistema de Cadastro de Vídeo Aulas",
         "stack": [
-          "back"
+          "BackEnd"
         ],
         "image": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Docker.svg",
-        "description": "description of project",
+        "description": "O Sistema de Cadastro de Vídeo Aulas é um aplicativo de gerenciamento de vídeo aulas que permite a usuários administradores cadastrar cursos e vídeo aulas para acesso dos alunos. O sistema permite o cadastro de usuários, possibilitando a criação e armazenamento de contas no banco de dados, bem como a autenticação dos usuários, com a opção de alterar informações de cadastro e excluir contas. Além disso, administradores podem cadastrar, atualizar e excluir cursos na plataforma. Utilizei tecnologias como TypeScript, NodeJS, Express, JsonWebToken, Bcrypt, DotEnv, PostgreSQL e TypeORM, assegurando uma aplicação segura e eficiente. O projeto está disponível no GitHub e demonstra minhas habilidades em desenvolver sistemas de gerenciamento de conteúdo educacional, utilizando práticas modernas de desenvolvimento BackEnd.",
         "techs": [
-          {
-            "name": "nome",
-            "link": "https://f005.backblazeb2.com/file/assets-my-portifolio/techs/Wordpress.svg"
-          }
+          "TypeScript",
+          "NodeJS",
+          "Express",
+          "JsonWebToken",
+          "Bcrypt",
+          "DotEnv",
+          "PostgreSQL",
+          "TypeORM"
         ],
-        "repository": "link github",
-        "deploy": "link deploy"
+        "repository": "https://github.com/jauregao/restapi-w-typeorm/",
+        "deploy": ""
       }
     ]
   }
