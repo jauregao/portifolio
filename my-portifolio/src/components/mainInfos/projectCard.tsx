@@ -20,7 +20,7 @@ export default function ProjectCard() {
     }, []);
 
     return (
-        <div className='w-full grid grid-cols-2 gap-8'>
+        <div className='w-full grid grid-cols-2 gap-8 animate-fade-up animate-duration-[800ms] animate-ease-in'>
             {projects.map(project => (
                 <ProjectCardItem key={project.name} project={project} />
             ))}

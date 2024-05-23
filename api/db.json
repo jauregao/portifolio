@@ -109,7 +109,7 @@
           "BackEnd"
         ],
         "image": "https://f005.backblazeb2.com/file/assets-my-portifolio/projects-img/pdv.jpg",
-        "description": "Desenvolvido como projeto final do curso de BackEnd da Cubos Academy, este sistema de gerenciamento de caixa facilita a administração de vendas. Permite cadastro seguro de usuários, gestão de clientes e produtos, e criação de registros de venda com confirmação por e-mail. Como líder de um grupo de cinco desenvolvedores, organizei tarefas, gerenciei prazos e supervisionei testes e deploy. Em quatro sprints, garanti a conclusão eficiente e pontual do projeto, assegurando funcionalidade e segurança. Este projeto destacou minhas habilidades técnicas em BackEnd e minha capacidade de liderança e gestão de projetos, evidenciando eficiência na resolução de problemas e entrega de soluções completas.",
+        "description": "Como projeto final do curso de BackEnd da Cubos Academy, criamos um sistema de gerenciamento de caixa para facilitar a administração de vendas. O sistema permite cadastro seguro de usuários, gestão de clientes e produtos, e criação de registros de venda com confirmação por e-mail. Liderando um time de cinco desenvolvedores, organizei tarefas, gerenciei prazos e supervisionei testes e deploy. Em quatro sprints, concluímos o projeto de forma eficiente e pontual, garantindo funcionalidade e segurança. Esse projeto mostrou minha capacidade de liderança e gestão de projetos, destacando minha eficiência na resolução de problemas e entrega de soluções completas.",
         "techs": [
           "JavaScript",
           "NodeJS",
