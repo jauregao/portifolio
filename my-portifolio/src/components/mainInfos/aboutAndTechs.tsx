@@ -21,7 +21,7 @@ export default function AboutAndTechs() {
     }, [])
 
     return (
-            <div className='p-10 animate-fade-left animate-duration-500 animate-ease-in overflow-scroll'>
+            <div className='p-10 animate-fade-left animate-duration-500 animate-ease-in overflow-y-scroll'>
                 <div className="mb-8">
                     <div className="flex items-center gap-5 mb-5">
                         <h2 className="font-realce xl:text-5xl text-4xl">Sobre Mim</h2>
