@@ -1,8 +1,8 @@
 import pkg from 'json-server';
-const { create, router: _router, defaults } = pkg;
-
 import 'dotenv/config';
 import cors from 'cors';
+
+const { create, router: _router, defaults } = pkg;
 
 const server = create();
 const router = _router('db.json'); 
@@ -10,9 +10,9 @@ const middlewares = defaults();
 
 const corsOptions = {
     origin: '*', 
-    methods: ['GET'],
-    allowedHeaders: ['Content-Type', 'Authorization'], 
-    credentials: true 
+    methods: 'GET,POST,PUT,DELETE',
+    optionsSuccessStatus: 200,
+    credentials: true,
 };
 
 server.use(cors(corsOptions));
