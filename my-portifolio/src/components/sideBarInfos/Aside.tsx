@@ -44,7 +44,7 @@ export default function Aside() {
             <Picture/>
         <section className="px-6 pt-16 pb-10 flex flex-col items-center lg:justify-between justify-start w-fit h-full bg-not-black lg:rounded-xl rounded-l-lg gap-6">
             <div>
-            <h1 className="text-center font-[realce] text-5xl mt-24">Amanda Oliveira</h1>
+            <h1 className="text-center font-realce text-5xl mt-24">Amanda Oliveira</h1>
             <h2 className="text-center font-semibold text-xl">Desenvolvedora BackEnd</h2>
             </div>
             <div className="flex gap-5">
@@ -69,7 +69,7 @@ export default function Aside() {
 
             <Contact/>
 
-            <div className="flex bg-shiny-purple py-2 px-5 gap-4 rounded-lg font-[realce] tracking-wider text-lg transition-all duration-300 cursor-pointer hover:bg-shiny-purple/80">
+            <div className="flex bg-shiny-purple py-2 px-5 gap-4 rounded-lg font-realce tracking-wider text-lg transition-all duration-300 cursor-pointer hover:bg-shiny-purple/80">
                 <Link href={resume} target="blank" rel="noopener noreferrer">Download CV</Link>
                 <img className="w-7 h-6" src="/assets/download.svg" alt="download icone" />
             </div>

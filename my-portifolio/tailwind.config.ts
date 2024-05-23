@@ -19,7 +19,7 @@ const config: Config = {
         "gray": "#D9D9D9"
       },
       fontFamily: {
-        'realce': ['var(--realce)']
+        'realce': ['var(--font-realce)', 'sans-serif']
       },
       keyframes: {
         'rotate-y-180': {

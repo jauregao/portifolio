@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Quicksand, Bebas_Neue } from "next/font/google";
 import RealceFont from 'next/font/local'
 import "./globals.css";
 
-const inter = Inter({ 
+const quicksand = Quicksand({ 
   subsets: ["latin"]
 });
 
-const realce = RealceFont({
-  src: 'fonts/Realce-Black.woff2',
-  variable: '--realce'
-})
+const realce = Bebas_Neue({
+  weight: "400",
+  variable: '--font-realce',
+  subsets: ["latin"]
+});
+
+// const realce = RealceFont({
+//   src: 'fonts/Realce-Black.woff2',
+//   variable: '--realce'
+// })
 
 export const metadata: Metadata = {
   title: "Portifóllio - Amanda Oliveira",
@@ -24,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${inter.className}`}>{children}</body>
+      <body className={`${quicksand.className} ${realce.variable}`}>{children}</body>
     </html>
   );
 }
