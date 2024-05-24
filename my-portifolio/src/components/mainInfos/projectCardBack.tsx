@@ -42,7 +42,7 @@ export default function ProjectCardBack({ project }: IProps) {
                             href={project.deploy}
                             target="_blank"
                             rel="noopener noreferrer"
-                            key={project.image}
+                            key={project.path}
                         >
                             DEPLOY
                         </Link>
