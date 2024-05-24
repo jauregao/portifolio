@@ -1,24 +1,16 @@
 'use client'
-import getData from '@/services/getData'
-import { DevData, TechIcons } from '@/types/devTypes'
+import { TechIcons } from '@/types/devTypes'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import { pt } from '@/data/db'
 
 export default function Techs() {
 
 const [techIcons, setTechIcons] = useState<TechIcons[]>([])
 
     useEffect(() => {
-        (async () => {        
-                try {
-                    const response: DevData = await getData()
-                    const data = response.infos.techIcons as TechIcons[]
-                    setTechIcons(data)
-                } catch (error) {
-                    console.error(error)    
-                }
-            }
-        )()
+        const tech = pt.infos.techIcons as TechIcons[]
+        setTechIcons(tech)
     }, [])
 
     return (
@@ -27,7 +19,7 @@ const [techIcons, setTechIcons] = useState<TechIcons[]>([])
                 techIcons.map((tech, index) => (
                     <div className='flex flex-col items-center' key={index}>
                     <Image
-                        src={tech.link}
+                        src={tech.path}
                         width={70}
                         height={70}
                         alt={`${tech.name} icon`}

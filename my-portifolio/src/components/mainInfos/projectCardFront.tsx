@@ -12,7 +12,7 @@ export default function ProjectCardFront({ project }: IProps) {
             <div className="bg-not-white/5 w-max h-max rounded-xl">
                 <Image
                     key={project.repository}
-                    src={project.image}
+                    src={project.path}
                     width={300}
                     height={300}
                     alt={`${project.name} photo`}

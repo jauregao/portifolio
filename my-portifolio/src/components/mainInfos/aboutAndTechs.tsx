@@ -1,23 +1,15 @@
 'use client'
 import { useState, useEffect} from 'react'
-import { DevData, Infos } from '@/types/devTypes'
-import getData from '@/services/getData'
 import Techs from '../mainContent/Techs'
+import { pt } from '@/data/db'
 
 export default function AboutAndTechs() {
 
-    const [info, setInfo] = useState<Infos>()
+    const [aboutMe, setAboutMe] = useState('')
 
     useEffect(() => {
-        (async () => {        
-            try {
-                const response: DevData = await getData()
-                const data = response.infos as Infos
-                setInfo(data)
-            } catch (error) {
-                console.error(error)    
-            }
-        })()
+        const about = pt.infos.about
+        setAboutMe(about)
     }, [])
 
     return (
@@ -28,7 +20,7 @@ export default function AboutAndTechs() {
                         <div className="xl:w-60 w-40 h-1 rounded-sm bg-shiny-purple"></div>
                     </div>
                     <p className="text-sm flex-wrap">
-                    {(info?.about ?? '').split('/').map((sentence, index, array) => (
+                    {aboutMe.split('/').map((sentence, index, array) => (
                         <span key={index}>
                             {sentence.trim()}
                             {index < array.length - 1 && <><br/> <br/></>}

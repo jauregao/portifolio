@@ -1,22 +1,15 @@
 import { useEffect, useState } from 'react'
 import ProjectCardFront from './projectCardFront'
 import ProjectCardBack from './projectCardBack'
-import { DevData, Project } from '@/types/devTypes'
-import getData from '@/services/getData'
+import { Project } from '@/types/devTypes'
+import { pt } from '@/data/db'
 
 export default function ProjectCard() {
     const [projects, setProjects] = useState<Project[]>([])
 
     useEffect(() => {
-        (async () => {        
-            try {
-                const response: DevData = await getData()
-                const data = response.projects as Project[]
-                setProjects(data)
-            } catch (error) {
-                console.error(error)    
-            }
-        })()
+        const data = pt.projects
+        setProjects(data)
     }, [])
 
     return (

@@ -1,11 +1,9 @@
-'use client'
-import { DevData } from "@/types/devTypes"
-import { useEffect, useState } from "react"
-import getData from "@/services/getData"
-import Contact from "./Contact"
-import Link from 'next/link'
-import Image from 'next/image'
-import Picture from "./Picture"
+import { useEffect, useState } from 'react';
+import Contact from './Contact';
+import Link from 'next/link';
+import Image from 'next/image';
+import Picture from './Picture';
+import { pt } from '@/data/db';
 
 export default function Aside() {
 
@@ -13,33 +11,25 @@ export default function Aside() {
             name: string
             link: string
             icon: string
-    }
+    };
 
     const [socialData, setSocialData] = useState<Props[]>([{
         name: '',
         link: '',
         icon: ''
-    }])
+    }]);
 
-    const[resume, setResume] = useState('')
+    const[resume, setResume] = useState('');
 
     useEffect(() => {
-        (async () => {        
-                try {
-                    const response: DevData = await getData()
-                    const data = response.social
-                    const resume = response.resume
-                    setResume(resume)
-                    setSocialData(data)
-                } catch (error) {
-                    console.error(error)    
-                }
-            }
-        )()
-    }, [])
+        const social = pt.social
+            setSocialData(social)
+        const resumeLink = pt.resume
+            setResume(resumeLink)
+    }, []);
+    
 
     return (
-
         <aside className="lg:w-max h-full w-full flex flex-col self-start items-center col-start-1 col-end-3 row-span-12 animate-fade-right animate-duration-300 animate-ease-in">
             <Picture/>
         <section className="px-6 pt-16 pb-10 flex flex-col items-center lg:justify-between justify-start w-fit h-full bg-not-black lg:rounded-xl rounded-l-lg gap-6">
@@ -64,7 +54,6 @@ export default function Aside() {
                         />
                         </Link>
                     ))}
-
             </div>
 
             <Contact/>
@@ -76,4 +65,4 @@ export default function Aside() {
         </section>
         </aside>
     )
-}
+};
