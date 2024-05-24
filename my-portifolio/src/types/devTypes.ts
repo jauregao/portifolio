@@ -6,7 +6,7 @@ export type SocialLink = {
 
 export type TechIcons = {
     name: string
-    link: string
+    path: string
 }
 
 export type Infos = {
@@ -18,7 +18,7 @@ export type Project = {
     name: string
     description: string
     stack: string[]
-    image: string
+    path: string
     techs: string[]
     repository: string
     deploy: string
