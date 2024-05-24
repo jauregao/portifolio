@@ -47,10 +47,10 @@ export const pt = {
                 name: "JavaScript",
                 path: "/assets/techs/JavaScript.svg"
             },
-            { 
-                name: "Jest",
-                path: "/assets/techs/Jest.svg"
-            },
+            // { 
+            //     name: "Jest",
+            //     path: "/assets/techs/Jest.svg"
+            // },
             { 
                 name: "MongoDB",
                 path: "/assets/techs/MongoDB.svg"
@@ -63,10 +63,10 @@ export const pt = {
                 name: "NestJS",
                 path: "/assets/techs/NestJS-Dark.svg"
             },
-            { 
-                name: "NextJS",
-                path: "/assets/techs/NextJS-Dark.svg"
-            },
+            // { 
+            //     name: "NextJS",
+            //     path: "/assets/techs/NextJS-Dark.svg"
+            // },
             { 
                 name: "NodeJS",
                 path: "/assets/techs/NodeJS-Dark.svg"
