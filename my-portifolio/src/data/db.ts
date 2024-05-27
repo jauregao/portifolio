@@ -145,7 +145,7 @@ export const pt = {
             name: "Mini Rede Social",
             stack: ["BackEnd"],
             path: "/assets/projects-img/networkl.jpg",
-            description: "A Mini Rede Social é uma aplicação onde os usuários podem postar pathns e interagir com outros posts. Possui funcionalidades de cadastro de usuário, permitindo a criação, atualização, listagem, detalhamento e desativação de contas. Também permite a criação, atualização, listagem, detalhamento e exclusão de posts, além de oferecer curtidas únicas e comentários em cada post.",
+            description: "A Mini Rede Social é uma aplicação onde os usuários podem postar imagens e interagir com outros posts. Possui funcionalidades de cadastro de usuário, permitindo a criação, atualização, listagem, detalhamento e desativação de contas. Também permite a criação, atualização, listagem, detalhamento e exclusão de posts, além de oferecer curtidas únicas e comentários em cada post.",
             techs: [
             "TypeScript",
             "MongoDB",
