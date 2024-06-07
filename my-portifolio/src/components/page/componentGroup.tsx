@@ -12,7 +12,7 @@ export default function ComponentGroup() {
   }
 
   return (
-      <div className="container grid grid-cols-14 grid-rows-12 items-center lg:gap-5 z-10">
+      <div className="container grid grid-cols-14 grid-rows-12 items-center lg:gap-5 gap-2 z-10">
         <Aside/>
         <MainInfos selectedInfo={selectedInfo} />
         <ChangeMainInfos onSelectInfo={changeSelectedInfo} />

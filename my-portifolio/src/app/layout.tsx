@@ -13,11 +13,6 @@ const realce = Bebas_Neue({
   subsets: ["latin"]
 });
 
-// const realce = RealceFont({
-//   src: 'fonts/Realce-Black.woff2',
-//   variable: '--realce'
-// })
-
 export const metadata: Metadata = {
   title: "Portifóllio - Amanda Oliveira",
   description: "Meu portifóllio, falando um pouco sobre mim e mostrando meus projetos.",

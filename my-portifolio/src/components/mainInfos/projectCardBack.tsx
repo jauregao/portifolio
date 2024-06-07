@@ -9,9 +9,9 @@ export default function ProjectCardBack({ project }: IProps) {
 
     return (
         <>
-            <div key={project.name} className="w-full h-full rounded-xl flex flex-col items-center justify-between">
-                <h3 className="font-realce tracking-wider text-2xl mt-4 text-center mb-3">{project.name.toUpperCase()}</h3>
-                    <p className="text-sm text-center">
+            <div className="w-full h-full rounded-xl flex flex-col items-center justify-between">
+                <h3 className="font-realce tracking-wider lg:text-2xl text-lg mt-4 text-center mb-3">{project.name.toUpperCase()}</h3>
+                    <p className="text-[12px] text-center">
                         {project.description.split('.').map((sentence, index) => (
                             <span key={index}>
                                 {sentence.trim()}
@@ -27,12 +27,12 @@ export default function ProjectCardBack({ project }: IProps) {
                         href={project.repository}
                         target="_blank"
                         rel="noopener noreferrer"
-                        key={project.name}
+                        key={project.repository}
                     >REPOSITÓRIO</Link>
                     {project.deploy.length === 0 ? (
                         <div
                             className="py-2 w-full bg-shiny-purple/80 rounded-lg text-[12px] text-center transition-all duration-300 cursor-not-allowed hover:opacity-50"
-                            key={project.name}
+                            key={project.deploy}
                         >
                             DEPLOY
                         </div>
@@ -42,7 +42,7 @@ export default function ProjectCardBack({ project }: IProps) {
                             href={project.deploy}
                             target="_blank"
                             rel="noopener noreferrer"
-                            key={project.path}
+                            key={project.deploy}
                         >
                             DEPLOY
                         </Link>

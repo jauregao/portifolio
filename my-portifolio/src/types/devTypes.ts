@@ -15,6 +15,7 @@ export type Infos = {
 }
 
 export type Project = {
+    id: number
     name: string
     description: string
     stack: string[]

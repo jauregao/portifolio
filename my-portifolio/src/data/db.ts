@@ -103,6 +103,7 @@ export const pt = {
         },
         projects: [
         {
+            id: 1,
             name: "Sistema de Gerenciamento de Caixa",
             stack: ["BackEnd"],
             path: "/assets/projects-img/pdv.jpg",
@@ -124,6 +125,7 @@ export const pt = {
             deploy: ""
         },
         {
+            id: 2,
             name: "Sistema de Autenticação",
             stack: ["BackEnd"],
             path: "/assets/projects-img/auth.jpg",
@@ -142,6 +144,7 @@ export const pt = {
             deploy: ""
         },
         {
+            id: 3,
             name: "Mini Rede Social",
             stack: ["BackEnd"],
             path: "/assets/projects-img/networkl.jpg",
@@ -160,6 +163,7 @@ export const pt = {
             deploy: ""
         },
         {
+            id: 4,
             name: "Sistema de Cadastro de Vídeo Aulas",
             stack: ["BackEnd"],
             path: "/assets/projects-img/orm.jpg",
