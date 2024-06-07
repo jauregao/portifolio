@@ -29,13 +29,14 @@ export default function Aside() {
     }, []);
     
 
+
     return (
-        <aside className="lg:w-max h-full w-full flex flex-col self-start items-center col-start-1 col-end-3 row-span-12 animate-fade-right animate-duration-300 animate-ease-in">
+        <aside className="lg:w-max h-full w-full flex flex-col self-start items-center col-start-1 lg:col-end-3 col-end-2 row-span-12 animate-fade-right animate-duration-300 animate-ease-in">
             <Picture/>
-        <section className="px-6 pt-16 pb-10 flex flex-col items-center lg:justify-between justify-start w-fit h-full bg-not-black lg:rounded-xl rounded-l-lg gap-6">
+        <section className="px-6 pt-16 pb-10 flex flex-col items-center lg:justify-between justify-evenly w-fit h-full bg-not-black lg:rounded-xl rounded-l-lg gap-6">
             <div>
-            <h1 className="text-center font-realce text-5xl mt-24">Amanda Oliveira</h1>
-            <h2 className="text-center font-semibold text-xl">Desenvolvedora BackEnd</h2>
+            <h1 className="text-center font-realce lg:text-5xl text-3xl lg:mt-24 mt-32">Amanda Oliveira</h1>
+            <h2 className="text-center font-semibold lg:text-xl text-lg">Desenvolvedora BackEnd</h2>
             </div>
             <div className="flex gap-5">
 
@@ -48,8 +49,8 @@ export default function Aside() {
                         <Image 
                             className="hover:opacity-80 transition-all duration-200"
                             src={redeSocial.icon}
-                            width={30}
-                            height={30}
+                            width={25}
+                            height={25}
                             alt={`${redeSocial.name} logo`} 
                         />
                         </Link>
@@ -58,7 +59,7 @@ export default function Aside() {
 
             <Contact/>
 
-            <div className="flex bg-shiny-purple py-2 px-5 gap-4 rounded-lg font-realce tracking-wider text-lg transition-all duration-300 cursor-pointer hover:bg-shiny-purple/80">
+            <div className="flex bg-shiny-purple py-2 px-5 gap-4 rounded-lg font-realce tracking-wider lg:text-lg text-md transition-all duration-300 cursor-pointer hover:bg-shiny-purple/80">
                 <Link href={resume} target="blank" rel="noopener noreferrer">Download CV</Link>
                 <img className="w-7 h-6" src="/assets/download.svg" alt="download icone" />
             </div>

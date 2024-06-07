@@ -1,27 +1,49 @@
+import Link from 'next/link'
+
+const icons = [
+    {
+        name: 'telefone',
+        path: '/assets/phone.svg',
+        content: '+55 (21) 97891-1990',
+        link: 'https://api.whatsapp.com/send?phone=5521978911990'
+    },
+    {
+        name: 'email',
+        path: '/assets/mail.svg',
+        content: 'amandajauregui.dev@gmail.com',
+        link: 'mailto:amandajauregui.dev@gmail.com'
+    },
+    {
+        name: 'localização',
+        path: '/assets/location-mark.svg',
+        content: 'São Gonçalo, RJ - Brasil',
+        link: 'https://www.google.com/maps/place/S%C3%A3o+Gon%C3%A7alo+-+RJ/@-22.8431549,-43.1492614,11z/data=!4m6!3m5!1s0x99835afc53dae1:0x939eaf2280b38824!8m2!3d-22.8233781!4d-43.0462495!16s%2Fm%2F027m9hc?entry=ttu'
+    }
+]
+
 export default function Contact() {
     return(
-        <section className="bg-not-white/10 p-5 max-w-96 h-max rounded-xl">
-            <div className="flex gap-3 mb-4 justify-start items-center">
-                <div className="bg-not-black rounded-xl w-14 h-14 flex justify-center items-center"><img className="min-w-9 min-h-9" src="/assets/phone.svg" alt="telefone icone" /></div>
-                <div>
-                    <p className="font-realce text-lg">Telefone</p>
-                    <p className="font-realce text-xl">+55 (21) 97891-1990</p>
-                </div>
-            </div>
-            <div className="flex gap-3 mb-4 justify-start items-center">
-                <div className="bg-not-black rounded-xl w-14 h-14 flex justify-center items-center"><img className="min-w-9 min-h-9" src="/assets/mail.svg" alt="email icone" /></div>
-                <div>
-                    <p className="font-realce text-lg">Email</p>
-                    <p className="font-realce text-xl">amandajauregui.dev@gmail.com</p>
-                </div>
-            </div>
-            <div className="flex gap-3">
-                <div className="bg-not-black rounded-xl w-14 h-14 flex justify-center items-center"><img className="min-w-9 min-h-9" src="/assets/location-mark.svg" alt="local icone" /></div>
-                <div>
-                    <p className="font-realce text-lg">Localização</p>
-                    <p className="font-realce text-xl">São Gonçalo, RJ - Brasil</p>
-                </div>
-            </div>
+        <section className="bg-not-white/10 lg:p-5 p-4 lg:max-w-96 w-[240px] h-max rounded-xl">
+            {
+                icons.map((icon) =>(
+                    <Link 
+                    href={icon.link}
+                    target="blank"
+                    rel="noopener noreferrer"
+                    key={icon.name}
+                    >
+                    
+                    <div className="flex gap-3 mb-4 justify-start items-center">
+                        <div className="bg-not-black rounded-xl lg:w-14 lg:h-14 w-11 h-11 flex justify-center items-center">
+                            <img className="lg:w-9 lg:h-9 w-7 h-7" src={icon.path} alt={`${icon.name} icone`} /></div>
+                        <div>
+                            <p className="font-realce lg:text-lg text-md">{icon.name}</p>
+                            <p className="font-realce lg:text-md text-sm">{icon.content}</p>
+                        </div>
+                    </div>
+                    </Link>
+                )) 
+            }
         </section>
     )
 }
