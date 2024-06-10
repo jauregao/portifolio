@@ -17,7 +17,7 @@ export default function AboutAndTechs() {
                 <div className="mb-8">
                     <div className="flex items-center gap-5 mb-5">
                         <h2 className="font-realce xl:text-5xl lg:text-4xl text-3xl">Sobre Mim</h2>
-                        <div className="xl:w-60 lg:w-40 w-32 h-1 rounded-sm bg-shiny-purple"></div>
+                        <div className="xl:w-60 lg:w-40 sm:w-32 w-20 h-1 rounded-sm bg-shiny-purple"></div>
                     </div>
                     <p className="text-sm flex-wrap">
                     {aboutMe.split('/').map((sentence, index, array) => (
@@ -31,7 +31,7 @@ export default function AboutAndTechs() {
                 <div>
                     <div className="flex items-center gap-5 mb-8">
                         <h2 className="font-realce xl:text-5xl lg:text-4xl text-3xl">Hard Skills</h2>
-                        <div className="xl:w-60 lg:w-40 w-28 h-1 rounded-sm bg-shiny-purple"></div>
+                        <div className="xl:w-60 lg:w-40 sm:w-28 w-20 h-1 rounded-sm bg-shiny-purple"></div>
                     </div>
                         <Techs/>
                 </div>
