@@ -31,7 +31,7 @@ export default function Aside() {
 
 
     return (
-        <aside className="lg:w-max h-full w-full flex flex-col self-start items-center col-start-1 lg:col-end-3 col-end-2 row-span-12 animate-fade-right animate-duration-300 animate-ease-in">
+        <aside className="lg:w-max h-full w-full flex flex-col self-start items-center sm:col-start-1 lg:col-end-3 sm:col-end-2 col-start-1 col-end-13 sm:row-span-12 row-start-1 row-end-5 animate-fade-right animate-duration-300 animate-ease-in">
             <Picture/>
         <section className="mt-14 lg:px-6 px-4 pt-16 pb-10 flex flex-col items-center lg:justify-between justify-evenly w-fit h-full bg-not-black rounded-xl gap-6">
             <div>
