@@ -9,14 +9,14 @@ export default function ProjectCardFront({ project }: IProps) {
 
     return (
         <>
-            <div className="bg-not-white/5 lg:w-max h-max sm:w-60 w-[200px] rounded-xl">
+            <div className="bg-not-white/5 lg:w-max h-max sm:w-60 w-auto rounded-xl">
                 <Image
                     key={project.repository}
                     src={project.path}
-                    width={300}
-                    height={300}
+                    width={250}
+                    height={250}
                     alt={`${project.name} photo`}
-                    className="rounded-xl w-[200px] h-auto sm:w-[300px] sm:h-[300px]"
+                    className="rounded-xl w-[350px] h-auto sm:w-auto sm:h-auto"
                 />
             </div>
 

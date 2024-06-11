@@ -42,7 +42,7 @@ function ProjectCardItem({ project }: ProjectCardItemProps) {
             onMouseLeave={handleMouseLeave}
             className='xl:w-full lg:w-[24rem] h-full w-60 '
         >
-            <div className={`bg-not-white/10 xl:w-full lg:w-[24rem] sm:w-[320px] w-[240px] h-full rounded-xl flex flex-col items-center p-7transform-style: preserve-3d p-7 rotate-y-180 ${isHovered ? 'animate-rotate-y-180' : ''}`}>
+            <div className={`bg-not-white/10 xl:w-full lg:w-[24rem] sm:w-[320px] w-[250px] h-full rounded-xl flex flex-col items-center p-7transform-style: preserve-3d p-7 rotate-y-180 ${isHovered ? 'animate-rotate-y-180' : ''}`}>
                 {isHovered ? <ProjectCardBack project={project} /> : <ProjectCardFront project={project} />}
             </div>
         </section>
