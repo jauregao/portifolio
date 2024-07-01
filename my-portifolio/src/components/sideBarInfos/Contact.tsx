@@ -23,7 +23,7 @@ const icons = [
 
 export default function Contact() {
     return(
-        <section className="bg-not-white/10 lg:p-5 p-2 lg:max-w-96 w-[240px] h-max rounded-xl sm:flex sm:flex-col hidden">
+        <section className="bg-not-white/10 lg:p-5 p-2 lg:w-full h-max rounded-xl sm:flex sm:flex-col hidden">
             {
                 icons.map((icon) =>(
                     <Link 
