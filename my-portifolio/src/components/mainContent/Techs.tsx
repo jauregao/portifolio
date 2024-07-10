@@ -14,7 +14,7 @@ const [techIcons, setTechIcons] = useState<TechIcons[]>([])
     }, [])
 
     return (
-        <div className='grid xl:grid-cols-8 lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-y-5'>
+        <div className='grid xl:grid-cols-8 lg:grid-cols-5 sm:grid-cols-3 grid-cols-3 gap-y-5'>
             {
                 techIcons.map((tech, index) => (
                     <div className='flex flex-col items-center' key={index}>
@@ -23,6 +23,7 @@ const [techIcons, setTechIcons] = useState<TechIcons[]>([])
                         width={70}
                         height={70}
                         alt={`${tech.name} icon`}
+                        className='sm:w-16 sm:h-16 w-[58px] h-[58px]'
                     />
                     <p className='pt-1 text-[12px] text-not-white/70'>{tech.name}</p>
 
