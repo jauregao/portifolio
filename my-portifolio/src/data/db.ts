@@ -259,7 +259,7 @@ export const pt = {
             },
             {
                 id: 9,
-                name: "Site Institucional - Intelifência Imobiliária",
+                name: "Site Institucional - Inteligência Imobiliária",
                 stack: ["LowCode"],
                 path: "/assets/projects-img/projese-inte.jpg",
                 description: "Site desenvolvido para a empresa, como freelancer.",
