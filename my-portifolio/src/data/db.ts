@@ -220,6 +220,33 @@ export const pt = {
             },
             {
                 id: 6,
+                name: "Blog - Subverso",
+                stack: ["LowCode"],
+                path: "/assets/projects-img/subverso.png",
+                description: "Blog desenvolvido a pedido do tatuador Darko Monteiro para tatuadores undergrounds.",
+                techs: [
+                "Wordpress",
+                "Elementor"
+                ],
+                repository: "",
+                deploy: "https://subverso.blog/"
+            },
+            {
+                id: 7,
+                name: "E-Commerce - CyberDarko",
+                stack: ["LowCode"],
+                path: "/assets/projects-img/cyberdarko.png",
+                description: "E-Commerce desenvolvido para o tatuador Darko Monteiro, com venda de produtos e agendamento de sessões de tatuagem.",
+                techs: [
+                "Wordpress",
+                "Elementor",
+                "WooCommerce"
+                ],
+                repository: "",
+                deploy: "https://cyberdarko.com/"
+            },
+            {
+                id: 8,
                 name: "Site Institucional - Grupo Projese",
                 stack: ["LowCode"],
                 path: "/assets/projects-img/grupo-projese.jpg",
@@ -232,7 +259,7 @@ export const pt = {
                 deploy: "https://projese.com.br/"
             },
             {
-                id: 7,
+                id: 9,
                 name: "Site Institucional - Administradora de Bens",
                 stack: ["LowCode"],
                 path: "/assets/projects-img/projese-adm.jpg",
@@ -245,7 +272,7 @@ export const pt = {
                 deploy: "https://administracao.projese.com.br/"
             },
             {
-                id: 8,
+                id: 10,
                 name: "Site Institucional - Empreendimentos",
                 stack: ["LowCode"],
                 path: "/assets/projects-img/projese-empr.jpg",
@@ -258,7 +285,7 @@ export const pt = {
                 deploy: "https://empreendimentos.projese.com.br/"
             },
             {
-                id: 9,
+                id: 11,
                 name: "Site Institucional - Inteligência Imobiliária",
                 stack: ["LowCode"],
                 path: "/assets/projects-img/projese-inte.jpg",
