@@ -243,7 +243,7 @@ export const pt = {
                 "WooCommerce"
                 ],
                 repository: "",
-                deploy: "https://cyberdarko.com/"
+                deploy: "https://cyberdarko.com"
             },
             {
                 id: 8,
