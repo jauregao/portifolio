@@ -21,16 +21,16 @@ export default function ProjectCardFront({ project }: IProps) {
             </div>
 
             <h3 className="font-realce tracking-wider lg:text-2xl text-lg mt-7 text-center mb-3">{project.name.toUpperCase()}</h3>
-                <div>
-                    <p className="mt-2 mb-3 text-center lg:text-xl text-md font-realce tracking-wider">Tecnologias utilizadas</p>
-                        <ul className="flex flex-wrap gap-x-5 gap-y-1 justify-center text-[13px]">
-                            {
-                                project.techs.map(tech => (
-                                    <li className="list-disc text-[12px]">{tech}</li>       
-                                ))
-                            }
-                        </ul>
-                </div>
+            <div>
+                <p className="mt-2 mb-3 text-center lg:text-xl text-md font-realce tracking-wider">Tecnologias utilizadas</p>
+                <ul className="flex flex-wrap gap-x-5 gap-y-1 justify-center text-[13px]">
+                    {
+                        project.techs.map(tech => (
+                            <li key={tech} className="list-disc text-[12px]">{tech}</li>
+                        ))
+                    }
+                </ul>
+            </div>
         </>
     )
 }
