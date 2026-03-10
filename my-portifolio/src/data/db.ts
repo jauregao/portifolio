@@ -29,7 +29,7 @@ export const pt = {
         }
         ],
         infos: {
-        about: "Sou estudante de Matemática na Universidade Federal Fluminense e desenvolvedora fullstack com foco em backend, dedicada a construir soluções seguras, escaláveis e bem estruturadas. Trabalho principalmente com Node.js, TypeScript, NestJS, PostgreSQL e Next.js, sempre buscando aplicar boas práticas de desenvolvimento, testes e arquitetura. Atualmente, venho me aprofundando em microsserviços e cloud computing./Atuo como mentora técnica no programa Aceleradora Ágil e Inclusiva da PUCRS, onde acompanho o desenvolvimento de alunas e ministro aulas sobre JavaScript, TypeScript, Node.js, React, HTML e CSS, com foco em aplicação prática e construção de soluções reais. Também participo de sessões de pair programming, reviso códigos e colaboro na estruturação de trilhas de aprendizado técnico./Tenho experiência anterior como monitora fullstack, desenvolvedora backend e desenvolvedora web com WordPress, atuando com hospedagens, bancos de dados, servidores VPS e integração com APIs externas./Minha trajetória me ajudou a desenvolver autonomia, pensamento crítico e uma abordagem eficiente para resolver problemas técnicos. Sigo em busca de projetos desafiadores que me façam crescer e contribuir com soluções que gerem impacto de verdade.",
+        about: "Sou desenvolvedora Fullstack com foco em backend, apaixonada por construir soluções seguras, escaláveis e bem estruturadas. Trabalho principalmente com Node.js, TypeScript, NestJS, PostgreSQL e Next.js, aplicando boas práticas de desenvolvimento, testes e arquitetura no dia a dia./Mais do que escrever código, acredito no poder transformador da educação. Atuo como mentora técnica no programa Aceleradora Ágil e Inclusiva da PUCRS, onde já mentorei mais de 30 desenvolvedoras e contribuí para a formação de +15 programadores, ministrando aulas, conduzindo pair programming, revisando código e colaborando na estruturação de trilhas de aprendizado./Tenho experiência como monitora fullstack, desenvolvedora backend e desenvolvedora web, atuando com hospedagens, servidores VPS, bancos de dados e integração com APIs externas. Ao longo dessa trajetória, desenvolvi autonomia, pensamento crítico e uma abordagem eficiente para resolução de problemas técnicos./Atualmente, venho me aprofundando em arquitetura de microsserviços, cloud computing com AWS e novas linguagens backend. Estou em busca de projetos desafiadores onde eu possa crescer, colaborar e gerar impacto real.",
         techIcons: [
             { 
                 name: "Docker",
@@ -106,6 +106,32 @@ export const pt = {
         ]
         },
         projects: [
+            {
+    id: 12,
+    name: "Finance Control",
+    stack: ["BackEnd", "FrontEnd", "Mobile"],
+    path: "/assets/projects-img/pdv.jpg",
+    description: "Plataforma fullstack de controle financeiro pessoal desenvolvida de forma independente, com foco em arquitetura robusta, segurança e boas práticas de produção. O backend conta com autenticação Firebase + JWT, rate limiting, segurança HTTP com Helmet, interceptors globais, documentação Swagger e módulos de transações, categorias e metas de poupança. O app mobile possui autenticação Google OAuth, rotas protegidas, tema claro/escuro e build configurado para Android e iOS via EAS. A versão web está em desenvolvimento com Next.js.",
+    techs: [
+        "TypeScript",
+        "NestJS",
+        "PostgreSQL",
+        "PrismaORM",
+        "Firebase",
+        "JWT",
+        "PassportJS",
+        "Docker",
+        "Swagger",
+        "Helmet",
+        "Jest",
+        "React Native",
+        "Expo",
+        "Axios",
+        "Next.js"
+    ],
+    repository: "https://github.com/jauregao/finance-control",
+    deploy: ""
+},
             {
                 id: 1,
                 name: "Rede Social para Esportistas",
