@@ -6,7 +6,7 @@ import { pt } from '@/data/db';
 
 export default function Aside() {
     return (
-        <aside className="portfolio-aside lg:w-full sm:h-full h-fit w-full flex flex-col self-start items-center sm:col-start-1 sm:col-end-3 lg:col-end-3 col-start-1 col-end-15 sm:row-span-12 row-start-1 row-end-3 animate-fade-right animate-duration-300 animate-ease-in">
+        <aside className="portfolio-aside lg:w-full sm:h-full h-fit w-full flex flex-col self-start items-center sm:col-start-1 sm:col-end-3 lg:col-end-2 col-start-1 col-end-15 sm:row-span-12 row-start-1 row-end-3 animate-fade-right animate-duration-300 animate-ease-in">
             <div className="relative w-full flex justify-center">
                 <Picture />
             </div>
