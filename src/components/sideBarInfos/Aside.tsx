@@ -13,7 +13,7 @@ export default function Aside() {
             <section className="mt-[-5rem] lg:px-6 px-4 pt-32 pb-10 flex flex-col items-center lg:justify-between justify-evenly w-full bg-not-black rounded-xl gap-6">
                 <div>
                     <h1 className="text-center font-realce lg:text-5xl text-3xl lg:mt-24 mt-16">Amanda Oliveira</h1>
-                    <h2 className="text-center font-semibold lg:text-xl text-lg">Desenvolvedora BackEnd</h2>
+                    <h2 className="text-center font-semibold lg:text-xl text-lg">Desenvolvedora FullStack</h2>
                 </div>
                 <div className="flex gap-5">
                     {pt.social.map((redeSocial) => (
