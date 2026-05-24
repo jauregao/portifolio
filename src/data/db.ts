@@ -91,10 +91,10 @@ export const pt = {
                 name: "Redis",
                 path: "/assets/techs/redis-logo.svg"
             },
-            {
-                name: "GitHub Actions",
-                path: "/assets/techs/githubactions.svg"
-            },
+            // {
+            //     name: "GitHub Actions",
+            //     path: "/assets/techs/githubactions.svg"
+            // },
             {
                 name: "AWS",
                 path: "/assets/techs/AWS-Dark.svg"
