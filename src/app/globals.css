@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --page-background: 7 1 15;
+    --page-surface: 255 255 255;
+    --page-surface-muted: 248 244 251;
+    --page-text: 33 22 51;
+    --page-text-muted: 92 80 119;
+    --page-dark-purple: 74 42 127;
+    --page-shiny-purple: 111 58 214;
+    --page-so-light-purple: 236 227 252;
+    --page-not-white: 56 40 84;
+    --page-not-black: 250 247 252;
+    --page-gray: 92 80 119;
+    --scrollbar-thumb: 129 47 241;
+    --scrollbar-thumb-hover: 129 47 241;
+  }
+
+  html.dark {
+    color-scheme: dark;
+    --page-background: 7 1 15;
+    --page-surface: 36 13 73;
+    --page-surface-muted: 36 13 73;
+    --page-text: 246 239 255;
+    --page-text-muted: 217 217 217;
+    --page-dark-purple: 36 13 73;
+    --page-shiny-purple: 129 47 241;
+    --page-so-light-purple: 241 229 255;
+    --page-not-white: 241 229 255;
+    --page-not-black: 7 1 15;
+    --page-gray: 217 217 217;
+    --scrollbar-thumb: 128 47 241;
+    --scrollbar-thumb-hover: 129 47 241;
+  }
+
+  body {
+    color: rgb(var(--page-text));
+    background:
+      linear-gradient(to bottom, transparent, rgb(var(--page-background)))
+      rgb(var(--page-background));
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--scrollbar-thumb) / 0.76);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--scrollbar-thumb-hover));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  html:not(.dark) .theme-icon {
+    filter: brightness(0) saturate(100%) invert(15%) sepia(13%) saturate(1731%) hue-rotate(229deg) brightness(92%) contrast(89%);
+    opacity: 0.92;
+  }
+
+  html:not(.dark) .theme-icon-soft {
+    filter: brightness(0) saturate(100%) invert(18%) sepia(11%) saturate(1450%) hue-rotate(228deg) brightness(94%) contrast(88%);
+    opacity: 0.82;
+  }
+
+  .portfolio-page {
+    background-size: cover;
+    background-position: center;
+  }
+
+  html.dark .portfolio-page {
+    background-image: url('/assets/background.svg');
+  }
+
+  html:not(.dark) .portfolio-page {
+    background-color: rgb(7 1 15);
+    background-image: url('/assets/background.svg');
+  }
+
+  @media (max-width: 1024px) {
+    .portfolio-page {
+      min-height: 100vh;
+      height: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .portfolio-workspace {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      height: auto;
+      overflow: visible;
+      gap: 1.25rem;
+      position: relative;
+    }
+
+    .portfolio-aside {
+      position: relative;
+      width: 100%;
+      max-width: none;
+      margin-left: auto;
+      margin-right: auto;
+      grid-column: auto;
+      grid-row: auto;
+    }
+
+    .portfolio-main {
+      width: 100%;
+      max-width: none;
+      height: auto;
+      overflow: visible;
+      align-self: stretch;
+      margin-left: auto;
+      margin-right: auto;
+      grid-column: auto;
+      grid-row: auto;
+    }
+
+    .portfolio-theme-toggle-wrap {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 30;
+    }
+
+    .portfolio-workspace-switcher-wrap {
+      position: absolute;
+      top: 5rem;
+      right: 1rem;
+      z-index: 30;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .portfolio-workspace {
+      display: grid !important;
+      grid-template-columns: minmax(0, 1fr) auto !important;
+      grid-template-rows: auto auto !important;
+      align-items: start !important;
+      column-gap: 0.75rem !important;
+      row-gap: 1rem !important;
+      height: auto !important;
+    }
+
+    .portfolio-aside {
+      grid-column: 1 / -1 !important;
+      grid-row: 1 !important;
+      width: 100% !important;
+      max-width: none !important;
+    }
+
+    .portfolio-main {
+      grid-column: 1 !important;
+      grid-row: 2 !important;
+      width: 100% !important;
+      max-width: none !important;
+      height: auto !important;
+      overflow: visible !important;
+      align-self: stretch !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    .portfolio-workspace-switcher-wrap {
+      grid-column: 2 !important;
+      grid-row: 2 !important;
+      position: sticky !important;
+      top: 1rem !important;
+      right: auto !important;
+      justify-self: end !important;
+      align-self: start !important;
+      z-index: 30 !important;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .portfolio-workspace {
+      display: grid !important;
+      grid-template-columns: minmax(0, 1fr) auto !important;
+      grid-template-rows: auto auto !important;
+      align-items: start !important;
+      column-gap: 1rem !important;
+      row-gap: 1.25rem !important;
+      height: auto !important;
+    }
+
+    .portfolio-aside {
+      grid-column: 1 / -1 !important;
+      grid-row: 1 !important;
+      width: 100% !important;
+      max-width: none !important;
+    }
+
+    .portfolio-main {
+      grid-column: 1 !important;
+      grid-row: 2 !important;
+      width: 100% !important;
+      max-width: none !important;
+      height: auto !important;
+      overflow: visible !important;
+      align-self: stretch !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    .portfolio-workspace-switcher-wrap {
+      grid-column: 2 !important;
+      grid-row: 2 !important;
+      position: sticky !important;
+      top: 1rem !important;
+      right: auto !important;
+      justify-self: end !important;
+      align-self: start !important;
+      z-index: 30 !important;
+    }
+  }
+}
+
+@layer components {
+  @keyframes rotate-y {
+    0% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+  }
+
+  .rotate-y-180 {
+    animation: rotate-y 0.5s both;
+  }
+
+  @keyframes rotate-y-back {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-180deg); 
+    }
+}
+
+.rotate-y-180-back {
+    animation: rotate-y-back 0.5s  both;
+}
+}
