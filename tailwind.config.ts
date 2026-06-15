@@ -11,12 +11,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "dark-purple": "rgb(var(--page-dark-purple) / <alpha-value>)",
-        "shiny-purple": "rgb(var(--page-shiny-purple) / <alpha-value>)",
-        "so-light-purple": "rgb(var(--page-so-light-purple) / <alpha-value>)",
-        "not-white": "rgb(var(--page-not-white) / <alpha-value>)",
-        "not-black": "rgb(var(--page-not-black) / <alpha-value>)",
-        "gray": "rgb(var(--page-gray) / <alpha-value>)"
+        "dark-purple": "rgb(var(--page-dark-purple))",
+        "shiny-purple": "rgb(var(--page-shiny-purple))",
+        "so-light-purple": "rgb(var(--page-so-light-purple))",
+        "not-white": "rgb(var(--page-not-white))",
+        "not-black": "rgb(var(--page-not-black))",
+        "gray": "rgb(var(--page-gray))"
       },
       fontFamily: {
         'realce': ['var(--font-realce)', 'sans-serif']

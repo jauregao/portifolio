@@ -16,7 +16,7 @@ export default function PortfolioWorkspace() {
       <Aside />
       <MainInfos selectedInfo={selectedInfo} />
       <div className="portfolio-theme-toggle-wrap col-start-13 col-end-15 row-start-1 self-start justify-self-end z-20 animate-fade-left animate-duration-300 animate-ease-in">
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
       </div>
       <div className="portfolio-workspace-switcher-wrap col-start-13 col-end-15 row-start-2 self-start justify-self-end animate-fade-left animate-duration-300 animate-ease-in">
         <SectionSwitcher onSelectInfo={setSelectedInfo} />
