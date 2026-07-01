@@ -379,7 +379,7 @@ export const pt: DevData = {
 
 export const en: DevData = {
     name: "Amanda Oliveira",
-    resume: "https://jauregao.github.io/cv/files/Amanda_Oliveira_EN.pdf",
+    resume: "https://jauregao.github.io/cv/files/Developer-Amanda_Oliveira.pdf",
     social: [
         {
             name: "github",
