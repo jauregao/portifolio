@@ -1,18 +1,22 @@
+'use client'
+
 import Image from 'next/image'
-import { pt } from '@/data/db'
+import { useDevData } from '@/hooks/useDevData'
 
 export default function Techs() {
+    const data = useDevData()
+
     return (
-        <div className='grid xl:grid-cols-8 lg:grid-cols-5 sm:grid-cols-3 grid-cols-3 gap-y-5'>
+        <div className='grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3'>
             {
-                pt.infos.techIcons.map((tech, index) => (
+                data.infos.techIcons.map((tech, index) => (
                     <div className='flex flex-col items-center' key={index}>
                     <Image
                         src={tech.path}
-                        width={70}
-                        height={70}
+                        width={48}
+                        height={48}
                         alt={`${tech.name} icon`}
-                        className='sm:w-16 sm:h-16 w-[58px] h-[58px]'
+                        className='sm:w-12 sm:h-12 w-[42px] h-[42px]'
                     />
                     <p className='pt-1 text-[12px] text-not-white/70'>{tech.name}</p>
 

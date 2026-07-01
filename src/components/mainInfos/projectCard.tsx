@@ -1,11 +1,14 @@
+'use client'
+
 import { useState } from 'react'
 import ProjectCardFront from './projectCardFront'
 import ProjectCardBack from './projectCardBack'
 import { Project } from '@/types/devTypes'
-import { pt } from '@/data/db'
+import { useDevData } from '@/hooks/useDevData'
 
 export default function ProjectCard() {
-    const [projects] = useState<Project[]>(pt.projects)
+    const data = useDevData()
+    const [projects] = useState<Project[]>(data.projects)
 
     return (
         <div className='lg:w-full sm:w-60 grid xl:grid-cols-2 grid-cols-1 gap-5 gap-y-5 justify-items-center animate-fade-up animate-duration-[800ms] animate-ease-in object-center'>

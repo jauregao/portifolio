@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { useDevData } from '@/hooks/useDevData'
 
 const icons = [
     {
@@ -31,6 +32,13 @@ const icons = [
 
 export default function Contact() {
     const [copiedValue, setCopiedValue] = useState('')
+    const data = useDevData()
+
+    const labelMap: Record<string, keyof typeof data.ui> = {
+        telefone: 'phone',
+        email: 'email',
+        localização: 'location',
+    }
 
     async function handleCopy(value: string) {
         try {
@@ -59,7 +67,7 @@ export default function Contact() {
                             <img className="theme-icon-soft lg:w-6 lg:h-6 w-5 h-5" src={icon.path} alt={`${icon.name} icone`} />
                         </div>
                         <div className="min-w-0">
-                            <p className="font-realce lg:text-xl text-lg leading-none capitalize">{icon.name}</p>
+                            <p className="font-realce lg:text-xl text-lg leading-none capitalize">{data.ui[labelMap[icon.name]]}</p>
                             {!icon.hideContent && (
                                 <p className="font-realce lg:text-base text-sm leading-tight text-not-white/90 break-words">{icon.content}</p>
                             )}
@@ -72,7 +80,7 @@ export default function Contact() {
                             onClick={() => handleCopy(icon.copyValue as string)}
                             className="shrink-0 rounded-lg border border-not-white/10 bg-not-white/5 px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-not-white/80 transition-all duration-200 hover:bg-not-white/10"
                         >
-                            {copiedValue === icon.copyValue ? 'Copiado' : 'Copiar'}
+                            {copiedValue === icon.copyValue ? data.ui.copied : data.ui.copy}
                         </button>
                     ) : null}
                 </div>

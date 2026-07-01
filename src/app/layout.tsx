@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Quicksand, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/components/theme/ThemeProvider";
+import LanguageProvider from "@/components/lang/LanguageProvider";
 
 const quicksand = Quicksand({ 
   subsets: ["latin"]
@@ -26,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="dark" suppressHydrationWarning>
       <body className={`${quicksand.className} ${realce.variable} antialiased`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <LanguageProvider>{children}</LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

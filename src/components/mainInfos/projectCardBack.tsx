@@ -1,11 +1,15 @@
+'use client'
+
 import { Project } from '@/types/devTypes'
 import Link from 'next/link'
+import { useDevData } from '@/hooks/useDevData'
 
 type IProps = {
     project: Project
 }
 
 export default function ProjectCardBack({ project }: IProps) {
+    const data = useDevData()
 
     return (
         <>
@@ -33,7 +37,7 @@ export default function ProjectCardBack({ project }: IProps) {
                         key={project.repository}
                         tabIndex={project.repository ? 0 : -1}
                     >
-                        REPOSITÓRIO
+                        {data.ui.repository}
                     </Link>
                     <Link
                         className={`w-full rounded-lg px-5 py-2 text-center  tracking-wider sm:text-[12px] text-[10px] transition-all duration-300 ${project.deploy
@@ -46,7 +50,7 @@ export default function ProjectCardBack({ project }: IProps) {
                         key={project.deploy}
                         tabIndex={project.deploy ? 0 : -1}
                     >
-                        DEPLOY
+                        {data.ui.deploy}
                     </Link>
                 </div>
             </div>

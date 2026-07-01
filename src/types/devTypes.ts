@@ -25,10 +25,28 @@ export type Project = {
     deploy: string
 }
 
+export type UiStrings = {
+    aboutTitle: string
+    hardSkills: string
+    projects: string
+    techUsed: string
+    repository: string
+    deploy: string
+    fullstackDev: string
+    downloadCV: string
+    phone: string
+    email: string
+    location: string
+    copy: string
+    copied: string
+    langButton: string
+}
+
 export type DevData = {
     name: string
     resume: string
     social: SocialLink[]
     infos: Infos
     projects: Project[]
+    ui: UiStrings
 }
