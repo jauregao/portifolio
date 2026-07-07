@@ -15,7 +15,7 @@ export default function PortfolioWorkspace() {
     <div className="portfolio-workspace relative grid h-full min-h-0 w-full max-w-[1440px] grid-cols-14 items-start gap-x-4 gap-y-4 overflow-hidden z-10">
       <Aside />
       <MainInfos selectedInfo={selectedInfo} />
-      <div className="absolute right-4 top-4 z-30 animate-fade-left animate-duration-300 animate-ease-in">
+      <div className="max-[1024px]:col-start-2 max-[1024px]:row-start-1 max-[1024px]:self-start max-[1024px]:mt-1 lg:absolute lg:right-4 lg:top-4 z-30 animate-fade-left animate-duration-300 animate-ease-in">
         <LangToggle />
       </div>
       <div className="portfolio-workspace-switcher-wrap col-start-13 col-end-15 row-start-2 self-start justify-self-end animate-fade-left animate-duration-300 animate-ease-in">
